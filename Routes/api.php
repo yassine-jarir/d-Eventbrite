@@ -1,14 +1,11 @@
 <?php
 
+
+use App\Core\Routes;
 use App\Controllers\EventController;
-use App\Core\Router;
 
-$router = new Router();
+$router = new Routes();
 
-$router->get('/evenets', [EventController::class, 'index']);
-$router->get('/evenets/{id}', [EventController::class, 'show']);
-$router->post('/evenets', [EventController::class, 'create']);
-$router->put('/evenets/{id}', [EventController::class, 'update']);
-$router->delete('/evenets/{id}', [EventController::class, 'delete']);
-$router->post('/evenets/login', [EventController::class, 'login']);
+$router->get('/', [EventController::class, 'index']);
 
+return $router;
