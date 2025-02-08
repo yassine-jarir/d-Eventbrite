@@ -9217,9 +9217,10 @@ blockquote.vs-quote .quote-author {
 .brand-wrap3 {
   background-color: var(--smoke-color);
   text-align: center;
-  padding: 80px 100px;
+  padding: 60px 100px;
   border-radius: 20px;
   margin-top: -110px;
+  height: 14rem;
 }
 @media (max-width: 991px) {
   .brand-wrap2,
