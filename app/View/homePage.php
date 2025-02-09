@@ -1,75 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<?php include __DIR__. "/parties/_header.php" ?>
 
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Eventino - Event Management & Conference HTML5 Template | Vecuro | Home 1 </title>
-<meta name="author" content="vecuro">
-<meta name="description" content="Eventino - IT Solution & Service HTML Template">
-<meta name="keywords" content="Eventino - IT Solution & Service HTML Template" />
-<meta name="robots" content="INDEX,FOLLOW">
-<!-- Mobile Specific Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Favicons - Place favicon.ico in the root directory -->
-<link rel="apple-touch-icon" sizes="57x57" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-57x57.png" ?>>
-<link rel="apple-touch-icon" sizes="60x60" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-60x60.png" ?>>
-<link rel="apple-touch-icon" sizes="72x72" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-72x72.png" ?>>
-<link rel="apple-touch-icon" sizes="76x76" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-76x76.png" ?>>
-<link rel="apple-touch-icon" sizes="114x114" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-114x114.png" ?>>
-<link rel="apple-touch-icon" sizes="120x120" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-120x120.png" ?>>
-<link rel="apple-touch-icon" sizes="144x144" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-144x144.png" ?>>
-<link rel="apple-touch-icon" sizes="152x152" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-152x152.png" ?>>
-<link rel="apple-touch-icon" sizes="180x180" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/apple-icon-180x180.png" ?>>
-<link rel="icon" type="image/png" sizes="32x32" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/favicon-32x32.png" ?>>
-<link rel="icon" type="image/png" sizes="96x96" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/favicon-96x96.png" ?>>
-<link rel="icon" type="image/png" sizes="16x16" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/favicon-16x16.png" ?>>
-<link rel="manifest" href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/favicons/manifest.json" ?>>
-<!--==============================
-    Google Fonts
-  ============================== -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-  rel="stylesheet">
-<!--==============================
-      All CSS File
-  ============================== -->
-<!-- Bootstrap -->
-<!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
-<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href=<?php echo $_SERVER['REQUEST_SCHEME'] . '://localhost/Eventbrite/app/View/assets/css/bootstrap.min.css' ?>>
-<!-- Fontawesome Icon -->
-<link rel="stylesheet" href=<?php echo $_SERVER['REQUEST_SCHEME'] . '://localhost/Eventbrite/app/View/assets/css/fontawesome.min.css' ?>>
-
-<!-- Magnific Popup -->
-<link rel="stylesheet" href=<?php echo $_SERVER['REQUEST_SCHEME'] . '://localhost/Eventbrite/app/View/assets/css/magnific-popup.min.css' ?>>
-<!-- Slick Slider -->
-<link rel="stylesheet" href=<?php echo $_SERVER['REQUEST_SCHEME'] . '://localhost/Eventbrite/app/View/assets/css/slick.min.css' ?>>
-<!-- Custom Phone Number Input -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/css/intlTelInput.css">
-<!-- Theme Custom CSS -->
-<link rel="stylesheet"
-  href="<?php echo $_SERVER['REQUEST_SCHEME'] . '://localhost/Eventbrite/app/View/assets/css/style.css' ?>">
-
-<body>
-  <!--[if lte IE 9]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  <!--********************************
-       Code Start From Here 
-  ******************************** -->
   <!--==============================
   Preloader
   ==============================-->
-  <div class="preloader">
-    <button class="preloaderCls vs-btn">Cancel Preloader </button>
-    <div class="preloader-inner">
-      <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/logo.svg" ?>
-        alt="logo">
-      <span class="loader"></span>
-    </div>
-  </div>
+<?php include __DIR__. "/parties/_loader.php" ?>
+  
   <!--==============================
     Mobile Menu
   ============================== -->
@@ -260,196 +195,7 @@
   <!--==============================
         Header Area
     ==============================-->
-  <header class="vs-header">
-    <!-- Header Top -->
-    <div class="header-top v2">
-      <div class="container">
-        <div class="justify-content-between align-items-center text-center text-lg-start gy-1 row">
-          <div class="d-lg-block col-lg-auto d-none">
-            <p class="header-text"><i class="fa-map-marker-alt fas"></i>12/7 new town, 245x Town 1214 Street,
-              United State
-            </p>
-          </div>
-          <div class="col-lg-auto">
-            <div class="header-right">
-              <div class="header-social">
-                <a href="#"><i class="fa-facebook-f fab"></i></a>
-                <a href="#"><i class="fa-twitter fab"></i></a>
-                <a href="#"><i class="fa-instagram fab"></i></a>
-                <a href="#"><i class="fa-behance fab"></i></a>
-                <a href="#"><i class="fa-youtube fab"></i></a>
-              </div>
-              <div class="d-md-flex d-none header-links">
-                <a href=""><i class="fa-user fas"></i>Register</a>
-                <a href=""><i class="fa-lock fas"></i>Login</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="header-inner style2">
-      <div class="container">
-        <div class="menu-top">
-          <div class="justify-content-between align-items-center gx-sm-0 gx-50 row">
-            <div class="col">
-              <div class="header-logo">
-                <a href="index.html"><img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/logo.svg" ?> alt="Eventino" class="logo" width="135"
-                    height="60px"></a>
-              </div>
-            </div>
-            <div class="d-lg-flex col-auto d-none header-info pe-0">
-              <div class="header-info_icon"><i class="fa-envelope fas"></i></div>
-              <div class="media-body">
-                <span class="header-info_label">Email Us:</span>
-                <div class="header-info_link"><a href="mailto:example@gmail.com">example@gmail.com</a></div>
-              </div>
-            </div>
-            <div class="d-lg-flex col-auto d-none header-info pe-0">
-              <div class="header-info_icon"><i class="fa-phone-alt fas"></i></div>
-              <div class="media-body">
-                <span class="header-info_label">Call us 24/7</span>
-                <div class="header-info_link"><a href="tel:+052699256693">052 (699) 256 - 693</a></div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="d-xl-inline-flex d-none">
-                <a href="about.html" class="vs-btn" tabindex="0">
-                  Make An Appointment
-                </a>
-              </div>
-              <button class="d-inline-block d-lg-none vs-menu-toggle"><i class="fa-bars fal"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="header-bottom">
-      <div class="container">
-        <!-- Main Menu Area -->
-        <div class="sticky-wrapper vs-navbar">
-          <div class="sticky-active">
-            <div class="custom-container">
-              <div class="align-items-center row">
-                <div class="col">
-                  <nav class="d-lg-block d-none main-menu menu-style2">
-                    <ul>
-                      <li class="menu-item-has-children">
-                        <a href="javascript:void(0);">Home</a>
-                        <ul class="sub-menu">
-                          <li><a href="index.html">Home 1</a></li>
-                          <li><a href="index-2.html">Home 2</a></li>
-                          <li><a href="index-3.html">Home 3</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="about.html">About Us</a>
-                      </li>
-                      <li class="menu-item-has-children">
-                        <a href="javascript:void(0);">Service</a>
-                        <ul class="sub-menu">
-                          <li><a href="service.html">Service</a></li>
-                          <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children">
-                        <a href="javascript:void(0);">Blog</a>
-                        <ul class="sub-menu">
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="blog-grid.html">Blog Grid</a></li>
-                          <li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children mega-menu-wrap">
-                        <a href="javascript:void(0);">Pages</a>
-                        <ul class="mega-menu">
-                          <li><a href="shop.html">Page List 1</a>
-                            <ul>
-                              <li><a href="index.html">Home 1</a></li>
-                              <li><a href="index-2.html">Home 1</a></li>
-                              <li><a href="index-3.html">Home 1</a></li>
-                              <li><a href="about.html">About Us</a></li>
-                              <li><a href="service.html">Service</a></li>
-                              <li><a href="service-details.html">Service Details</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="javascript:void(0);">Page List 2</a>
-                            <ul>
-                              <li><a href="team.html">Team</a></li>
-                              <li><a href="blog.html">Blog</a></li>
-                              <li><a href="blog-grid.html">Blog Grid</a></li>
-                              <li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-                              <li><a href="blog-details.html">Blog Details</a></li>
-                              <li><a href="event-booking.html">Event Booking</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="javascript:void(0);">Page List 3</a>
-                            <ul>
-                              <li><a href="events-grid.html">Events Grid</a></li>
-                              <li><a href="events-grid-2.html">Events Grid Two</a></li>
-                              <li><a href="event-details.html">Event Details</a></li>
-                              <li><a href="plan.html">Event Plan</a></li>
-                              <li><a href="login.html">Login</a></li>
-                              <li><a href="register.html">Register</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="javascript:void(0);">Page List 4</a>
-                            <ul>
-                              <li><a href="coming-soon.html">Coming Soon</a></li>
-                              <li><a href="404.html">Error Page</a></li>
-                              <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="col-auto">
-                  <div class="header-btns">
-                    <div class="d-lg-block d-none">
-                      <form action="#" class="header-search v2">
-                        <input type="text" placeholder="Search here...">
-                        <button type="submit" aria-label="search-button">
-                          <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/icons/e-2-1.svg" ?> alt="icon">
-                        </button>
-                      </form>
-                    </div>
-                    <div class="d-lg-inline-block d-none">
-                      <button class="sideMenuToggler v2">
-                        <i>
-                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_214_286)">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M24.7161 14.0882L29.0814 9.72289C30.3067 8.49763 30.3067 6.50957 29.0814 5.2843L24.7161 0.918952C23.4908 -0.306317 21.5027 -0.306317 20.2775 0.918952L15.9121 5.2843C14.6868 6.50957 14.6868 8.49763 15.9121 9.72289L20.2775 14.0882C21.5027 15.3135 23.4908 15.3135 24.7161 14.0882ZM27.6019 8.24336L23.2365 12.6087C22.8285 13.0168 22.1651 13.0168 21.757 12.6087L17.3916 8.24336C16.9836 7.83529 16.9836 7.1719 17.3916 6.76383L21.757 2.39848C22.1651 1.99041 22.8285 1.99041 23.2365 2.39848L27.6019 6.76383C28.0099 7.1719 28.0099 7.83529 27.6019 8.24336Z"
-                                fill="white" />
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M13.6025 19.5363C13.6025 18.7035 13.2718 17.9051 12.6827 17.317C12.0947 16.728 11.2963 16.3973 10.4634 16.3973C8.3854 16.3973 5.21707 16.3973 3.13903 16.3973C2.30614 16.3973 1.50778 16.728 0.919734 17.317C0.330643 17.9051 0 18.7035 0 19.5363V26.8608C0 27.6936 0.330643 28.492 0.919734 29.0801C1.50778 29.6691 2.30614 29.9998 3.13903 29.9998H10.4634C11.2963 29.9998 12.0947 29.6691 12.6827 29.0801C13.2718 28.492 13.6025 27.6936 13.6025 26.8608V19.5363ZM29.2976 19.5363C29.2976 18.7035 28.967 17.9051 28.3779 17.317C27.7899 16.728 26.9915 16.3973 26.1586 16.3973C24.0806 16.3973 20.9122 16.3973 18.8342 16.3973C18.0013 16.3973 17.2029 16.728 16.6149 17.317C16.0258 17.9051 15.6952 18.7035 15.6952 19.5363V26.8608C15.6952 27.6936 16.0258 28.492 16.6149 29.0801C17.2029 29.6691 18.0013 29.9998 18.8342 29.9998H26.1586C26.9915 29.9998 27.7899 29.6691 28.3779 29.0801C28.967 28.492 29.2976 27.6936 29.2976 26.8608V19.5363ZM11.5098 19.5363V26.8608C11.5098 27.138 11.3999 27.4049 11.2032 27.6005C11.0075 27.7972 10.7407 27.9071 10.4634 27.9071H3.13903C2.86175 27.9071 2.59493 27.7972 2.39927 27.6005C2.20255 27.4049 2.09269 27.138 2.09269 26.8608V19.5363C2.09269 19.2591 2.20255 18.9922 2.39927 18.7966C2.59493 18.5999 2.86175 18.49 3.13903 18.49H10.4634C10.7407 18.49 11.0075 18.5999 11.2032 18.7966C11.3999 18.9922 11.5098 19.2591 11.5098 19.5363ZM27.205 19.5363V26.8608C27.205 27.138 27.0951 27.4049 26.8984 27.6005C26.7027 27.7972 26.4359 27.9071 26.1586 27.9071H18.8342C18.5569 27.9071 18.2901 27.7972 18.0944 27.6005C17.8977 27.4049 17.7879 27.138 17.7879 26.8608V19.5363C17.7879 19.2591 17.8977 18.9922 18.0944 18.7966C18.2901 18.5999 18.5569 18.49 18.8342 18.49H26.1586C26.4359 18.49 26.7027 18.5999 26.8984 18.7966C27.0951 18.9922 27.205 19.2591 27.205 19.5363ZM13.6025 3.84118C13.6025 3.00829 13.2718 2.20993 12.6827 1.62188C12.0947 1.03279 11.2963 0.702148 10.4634 0.702148C8.3854 0.702148 5.21707 0.702148 3.13903 0.702148C2.30614 0.702148 1.50778 1.03279 0.919734 1.62188C0.330643 2.20993 0 3.00829 0 3.84118V11.1656C0 11.9985 0.330643 12.7968 0.919734 13.3849C1.50778 13.974 2.30614 14.3046 3.13903 14.3046H10.4634C11.2963 14.3046 12.0947 13.974 12.6827 13.3849C13.2718 12.7968 13.6025 11.9985 13.6025 11.1656V3.84118ZM11.5098 3.84118V11.1656C11.5098 11.4429 11.3999 11.7097 11.2032 11.9054C11.0075 12.1021 10.7407 12.2119 10.4634 12.2119H3.13903C2.86175 12.2119 2.59493 12.1021 2.39927 11.9054C2.20255 11.7097 2.09269 11.4429 2.09269 11.1656V3.84118C2.09269 3.5639 2.20255 3.29708 2.39927 3.10142C2.59493 2.9047 2.86175 2.79484 3.13903 2.79484H10.4634C10.7407 2.79484 11.0075 2.9047 11.2032 3.10142C11.3999 3.29708 11.5098 3.5639 11.5098 3.84118Z"
-                                fill="white" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_214_286">
-                                <rect width="30" height="30" fill="white" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <?php include __DIR__ . "/parties/_navbar.php" ?>
   <!--==============================
     Hero Area
     ==============================-->
@@ -557,38 +303,276 @@
         <div class="col-lg-6">
           <div class="text-center img-box2">
             <div class="card-style2">
-              <span class="number"><span>15</span>+</span>
-              <h3 class="title">Years of Experience</h3>
+              <span class="number"><span>5</span>+</span>
+              <h3 class="title">Days of Experience</h3>
             </div>
             <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/about/a-full-1.png" ?> alt="about">
           </div>
         </div>
         <div class="mb-30 col-lg-6">
           <span class="sec-subtitle">About Us</span>
-          <h2 class="sec-title">We Are Eventino, No. 1 Event Management Agency</h2>
-          <p>Lorem ipsum dolor sit amet. Rem enim sapiente sit omnis iste sit on The best of architecto asperiores aut
-            repellendus quam. Id unde harum qui quos beatae aut saepe omnis sit modi tenetur qui deleniti laudantium quo
-            rerum ipsa.</p>
+          <h2 class="sec-title">Nous sommes Eventino, agence de gestion d'événements n°1</h2>
+          <p>Une plateformes de gestion d’événements comme Eventbrite permettent aux organisateurs de créer, gérer et promouvoir des événements en ligne ou en présentiel.</p>
           <div class="list-style1 style2">
             <ul>
-              <li><i class="fa-check-circle fal"></i> Non consectetur a erat nam at lectus urna</li>
-              <li><i class="fa-check-circle fal"></i> Odio aenean sed adipiscing diam donec adipiscing.</li>
-              <li><i class="fa-check-circle fal"></i> Odio aenean sed adipiscing diam donec adipiscing.</li>
-              <li><i class="fa-check-circle fal"></i> Odio aenean sed adipiscing diam donec adipiscing.</li>
+              <li><i class="fa-check-circle fal"></i> Les organisateurs peuvent publier et gérer des événements.</li>
+              <li><i class="fa-check-circle fal"></i> Les participants peuvent réserver des billets en ligne.</li>
+              <li><i class="fa-check-circle fal"></i> Un back-office permet aux administrateurs de gérer les utilisateurs et événements.</li>
+              <li><i class="fa-check-circle fal"></i> Des statistiques avancées permettent un suivi précis des événements et ventes.</li>
             </ul>
           </div>
           <div class="d-inline-flex">
-            <a href="about.html" class="vs-btn" tabindex="0">
+            <!-- <a href="about.html" class="vs-btn" tabindex="0">
               More Information
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- About Area End -->
+
+  <!-- select by category -->
+  <section class="space-top space-extra-bottom events">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10 col-xl-7 col-xxl-6">
+          <div class="text-center title-area">
+            <span class="sec-subtitle2">Upcoming Events</span>
+            <h2 class="sec-title">Explore Our Next Upcoming Awesome Events</h2>
+          </div>
+        </div>
+        <div>
+          <div class="fadeInUp filter-menu-active filter-menu1 wow" data-wow-delay="0.3s">
+            <button data-filter="*" class="active">All</button>
+            <button data-filter=".Business">Business</button>
+            <button data-filter=".Art">Art</button>
+            <button data-filter=".Education">Education</button>
+            <button data-filter=".Sport">Sport</button>
+            <button data-filter=".Festival">Festival</button>
+            <button data-filter=".More">More</button>
+          </div>
+        </div>
+      </div>
+      <div class="fadeInUp filter-active2 row wow" data-wow-delay="0.4s">
+        <div class="Art Business col-lg-4 col-md-6 filter-item More">
+          <div class="event-style1">
+            <div class="event-img">
+              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/events/e-1-1.jpg"?> alt="e 1 1">
+              <div class="event-tags">
+                <a href="event-details.html">Business</a>
+              </div>
+              <div class="event-date">
+                <span>20</span>
+                January
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-meta">
+                <ul>
+                  <li>
+                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="event-title h5"><a href="event-details.html">Ring in the New Year A Reunion and Music!</a></h3>
+              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
+                am adipiscing elit.</p>
+              <div class="event-footer">
+                <a href="event-details.html" class="event-link">Tickets & Details</a>
+                <span class="event-price">Price: <span>$199</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Art col-lg-4 col-md-6 Education filter-item Sport">
+          <div class="event-style1">
+            <div class="event-img">
+              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/events/e-1-2.jpg"?> alt="e 1 1">
+              <div class="event-tags">
+                <a href="event-details.html">Art</a>
+              </div>
+              <div class="event-date">
+                <span>24</span>
+                January
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-meta">
+                <ul>
+                  <li>
+                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="event-title h5"><a href="event-details.html">New Year’s Eve Reunion Celebrate with Music and
+                  Friends</a></h3>
+              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
+                am adipiscing elit.</p>
+              <div class="event-footer">
+                <a href="event-details.html" class="event-link">Tickets & Details</a>
+                <span class="event-price">Price: <span>$150</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Art col-lg-4 col-md-6 Education filter-item More">
+          <div class="event-style1">
+            <div class="event-img">
+              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/events/e-1-3.jpg"?> alt="e 1 1">
+              <div class="event-tags">
+                <a href="event-details.html">Education</a>
+              </div>
+              <div class="event-date">
+                <span>25</span>
+                March
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-meta">
+                <ul>
+                  <li>
+                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="event-title h5"><a href="event-details.html">2024 Reunion Music, Memories, and New Year’s
+                  Celebrations</a></h3>
+              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
+                am adipiscing elit.</p>
+              <div class="event-footer">
+                <a href="event-details.html" class="event-link">Tickets & Details</a>
+                <span class="event-price">Price: <span>$199</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Business col-lg-4 col-md-6 Education Education filter-item">
+          <div class="event-style1">
+            <div class="event-img">
+              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/events/e-1-4.jpg"?> alt="e 1 1">
+              <div class="event-tags">
+                <a href="event-details.html">Education</a>
+              </div>
+              <div class="event-date">
+                <span>15</span>
+                January
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-meta">
+                <ul>
+                  <li>
+                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="event-title h5"><a href="event-details.html">Unite and Celebrate Happy New Year Music
+                  Festival</a></h3>
+              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
+                am adipiscing elit.</p>
+              <div class="event-footer">
+                <a href="event-details.html" class="event-link">Tickets & Details</a>
+                <span class="event-price">Price: <span>$299</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Business col-lg-4 col-md-6 filter-item More Sport">
+          <div class="event-style1">
+            <div class="event-img">
+              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/events/e-1-5.jpg"?> alt="e 1 1">
+              <div class="event-tags">
+                <a href="event-details.html">Sport</a>
+              </div>
+              <div class="event-date">
+                <span>12</span>
+                January
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-meta">
+                <ul>
+                  <li>
+                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="event-title h5"><a href="event-details.html">Celebrate Together New Year’s Reunion and Music
+                  Bash</a></h3>
+              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
+                am adipiscing elit.</p>
+              <div class="event-footer">
+                <a href="event-details.html" class="event-link">Tickets & Details</a>
+                <span class="event-price">Price: <span>$199</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 Festival filter-item Sport">
+          <div class="event-style1">
+            <div class="event-img">
+              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/events/e-1-6.jpg"?> alt="e 1 1">
+              <div class="event-tags">
+                <a href="event-details.html">Festival</a>
+              </div>
+              <div class="event-date">
+                <span>10</span>
+                January
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-meta">
+                <ul>
+                  <li>
+                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="event-title h5"><a href="event-details.html">Dance into the New Year Reunion and Music
+                  Festival</a></h3>
+              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
+                am adipiscing elit.</p>
+              <div class="event-footer">
+                <a href="event-details.html" class="event-link">Tickets & Details</a>
+                <span class="event-price">Price: <span>$199</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="justify-content-center row">
+        <div class="col-auto">
+          <div class="d-inline-flex pt-10">
+            <a href="event.html" class="vs-btn">View All Events</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- select by category end -->
+
+
   <!-- Feature Area -->
-  <section class="feature-layout2">
+  <!-- <section class="feature-layout2">
     <div class="container">
       <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2"
         data-md-slide-show="2">
@@ -634,7 +618,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Feature Area End -->
   <!-- Upcoming Events -->
   <section class="events-layout2">
@@ -783,146 +767,6 @@
     </div>
   </section>
   <!-- Upcoming Events End -->
-  <!-- Video Area -->
-  <section>
-    <div class="video-wrap2" data-bg-src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/bg/video-bg-1-2.jpg" ?>>
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="video-content">
-              <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video play-btn style4" tabindex="0"><i
-                  class="fa-play fas"></i></a>
-              <span class="sec-subtitle4 style2">See And Descover</span>
-              <h2 class="text-white sec-title">Know More About Eventino For Better Experience</h2>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <form class="form-style1 ajax-contact" action="mail.php" method="post">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/f-1-1.png" ?> alt="form shape" class="shape-1">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/f-1-2.png" ?> alt="form shape" class="shape-2">
-              <h3 class="title">Register Now</h3>
-              <span class="subtitle">Make A Booking</span>
-              <div class="gx-20 row">
-                <div class="form-group col-md-12">
-                  <input class="form-control" type="text" name="fname" id="funame" placeholder="Full Name">
-                </div>
-                <div class="form-group col-md-12">
-                  <input class="form-control" type="email" name="email" id="email" placeholder="Email Address">
-                </div>
-                <div class="form-group col-md-12">
-                  <input class="form-control" type="tel" name="tel" id="tel" placeholder="Phone Number">
-                </div>
-                <div class="form-group col-md-12">
-                  <select class="form-control" name="subject" id="subject">
-                    <option value="Choose Package">Choose Package</option>
-                    <option value="Oil Change">Oil Change</option>
-                    <option value="Tire Rotation">Tire Rotation</option>
-                    <option value="Brake Inspection">Brake Inspection</option>
-                    <option value="Engine Tune-Up">Engine Tune-Up</option>
-                    <option value="Transmission Flush">Transmission Flush</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-12">
-                  <select class="form-control" name="subject" id="subject">
-                    <option value="Ticket Quantity">Ticket Quantity</option>
-                    <option value="Oil Change">Oil Change</option>
-                    <option value="Tire Rotation">Tire Rotation</option>
-                    <option value="Brake Inspection">Brake Inspection</option>
-                    <option value="Engine Tune-Up">Engine Tune-Up</option>
-                    <option value="Transmission Flush">Transmission Flush</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-12">
-                  <button class="style2 vs-btn" type="submit">Register Now</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Video Area End -->
-  <!-- Service Area -->
-  <section class="service-layout2">
-    <div class="container">
-      <div class="justify-content-between align-items-end row">
-        <div class="col-lg-6">
-          <div class="title-area">
-            <span class="sec-subtitle">Services</span>
-            <h2 class="sec-title">Get A New Experience With Eventino Services</h2>
-          </div>
-        </div>
-        <div class="d-lg-block col-auto d-none">
-          <div class="sec-btns title-area">
-            <button class="vs-btn" data-slick-prev="#service-slider1">
-              <i class="fa-arrow-left far"></i>Prev
-            </button>
-            <button class="vs-btn" data-slick-next="#service-slider1">Next
-              <i class="fa-arrow-right far"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2"
-        id="service-slider1">
-        <div class="col-lg-3">
-          <div class="service-style2" data-bg-src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-big-1-1.jpg" ?>>
-            <div class="overlay"></div>
-            <div class="service-img">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-1-1.jpg" ?> alt="service image">
-            </div>
-            <div class="service-content">
-              <h3 class="h5 service-name"><a href="service-details.html">Reunion Party</a></h3>
-              <span class="service-price">Start from <span>$1.400-$2.000</span></span>
-            </div>
-            <a href="service-details.html" class="vs-btn">Read More<i class="fa-arrow-right fas"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-style2" data-bg-src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-big-1-2.jpg" ?>>
-            <div class="overlay"></div>
-            <div class="service-img">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-1-2.jpg" ?> alt="service image">
-            </div>
-            <div class="service-content">
-              <h3 class="h5 service-name"><a href="service-details.html">Business Meeting</a></h3>
-              <span class="service-price">Start from <span>$1.400-$2.000</span></span>
-            </div>
-            <a href="service-details.html" class="vs-btn">Read More<i class="fa-arrow-right fas"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-style2" data-bg-src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-big-1-3.jpg" ?>>
-            <div class="overlay"></div>
-            <div class="service-img">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-1-3.jpg" ?> alt="service image">
-            </div>
-            <div class="service-content">
-              <h3 class="h5 service-name"><a href="service-details.html">Widding Party</a></h3>
-              <span class="service-price">Start from <span>$1.400-$2.000</span></span>
-            </div>
-            <a href="service-details.html" class="vs-btn">Read More<i class="fa-arrow-right fas"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-style2" data-bg-src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-big-1-4.jpg" ?>>
-            <div class="overlay"></div>
-            <div class="service-img">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/services/s-1-4.jpg" ?> alt="service image">
-            </div>
-            <div class="service-content">
-              <h3 class="h5 service-name"><a href="service-details.html">Birthday Party</a></h3>
-              <span class="service-price">Start from <span>$1.400-$2.000</span></span>
-            </div>
-            <a href="service-details.html" class="vs-btn">Read More<i class="fa-arrow-right fas"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Service Area End -->
   <!-- Counter Area Start -->
   <div class="position-relative">
     <div class="counter-wrap2">
@@ -1331,540 +1175,11 @@
     </div>
   </section>
   <!-- Team Area end -->
-  <!-- Gallery Area Start -->
-  <section class="space-top space-extra-bottom overflow-hidden smoke-bg">
-    <div class="container">
-      <div class="justify-content-between align-items-end row">
-        <div class="col-lg-5">
-          <div class="title-area">
-            <span class="sec-subtitle">Eventino Gallery</span>
-            <h2 class="sec-title">Our Amazing And unforgettable Times</h2>
-          </div>
-        </div>
-        <div class="col-auto">
-          <div class="d-inline-flex pt-10 title-area">
-            <a href="event.html" class="vs-btn">View All Events</a>
-          </div>
-        </div>
-      </div>
-      <div class="filter-active filter-gallery gx-30 row">
-        <div class="col-lg-3 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-1.jpg" ?> class="popup-image popup-link">
-              <i class="fa-image fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-1.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Business Conference In Australia</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item--width2 col-lg-6 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-link popup-video">
-              <i class="fa-play fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-2.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Empowering Business Growth Conference in Melbourne</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-3.jpg" ?> class="popup-image popup-link">
-              <i class="fa-image fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-3.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Melbourne Business Mastermind</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item--width2 col-lg-6 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-link popup-video">
-              <i class="fa-play fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-4.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Innovative Leadership Summit for Australian Entrepreneurs</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-5.jpg" ?> class="popup-image popup-link">
-              <i class="fa-image fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-5.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Canberra Commerce Convention</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-6.jpg" ?> class="popup-image popup-link">
-              <i class="fa-image fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-6.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Sydney Leadership Symposium</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-7.jpg" ?> class="popup-image popup-link">
-              <i class="fa-image fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-7.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Brisbane Business Breakthrough</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-8.jpg" ?> class="popup-image popup-link">
-              <i class="fa-image fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-8.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Canberra Commerce Convention</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item--width2 col-lg-6 col-md-6 filter-item">
-          <div class="gallery-style1">
-            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-link popup-video">
-              <i class="fa-play fas"></i>
-            </a>
-            <div class="overlay"></div>
-            <div class="gallery-thumb">
-              <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/gallery/g-1-9.jpg" ?> alt="gallery">
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-date">
-                <span>
-                  <i class="fa-clock fas"></i>
-                  08:00am - 22:00pm
-                </span>
-              </div>
-              <h3 class="gallery-title h5">
-                <a href="gallery-details.html">Transformative Business Strategies Conference in Australia</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Gallery Area End -->
-  <!-- Blog Area -->
-  <section class="space-top space-extra-bottom">
-    <div class="container">
-      <div class="justify-content-between align-items-end row">
-        <div class="col-lg-6">
-          <div class="title-area">
-            <span class="sec-subtitle2">Blog And News</span>
-            <h2 class="sec-title">Our Latest Blog And Latest News</h2>
-          </div>
-        </div>
-        <div class="col-auto">
-          <div class="blog-slide-btns title-area">
-            <button class="vs-btn" data-slick-prev="#blog-slider1">
-              <i class="fa-arrow-left far"></i>
-            </button>
-            <button class="vs-btn" data-slick-next="#blog-slider1">
-              <i class="fa-arrow-right far"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" id="blog-slider1">
-        <div class="col-lg-4">
-          <div class="blog-style2 vs-blog">
-            <div class="blog-img">
-              <a href="blog-details.html">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-1.jpg" ?> alt="blog">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-1.jpg" ?> alt="blog">
-              </a>
-              <span class="blog-date"><i class="fa-clock fas"></i>January 25, 2024</span>
-            </div>
-            <div class="blog-content">
-              <div class="blog-metas">
-                <ul>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-user fas"></i> By Admin
-                    </a>
-                  </li>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-comments fas"></i> (03) Comments
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="blog-title h5"><a href="blog-details.html">Global Business Goal Make
-                  Life Easy From Tech</a></h3>
-              <a class="blog-link" href="blog-details.html">Read More<i class="fa-arrow-right far"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="blog-style2 vs-blog">
-            <div class="blog-img">
-              <a href="blog-details.html">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-2.jpg" ?> alt="blog">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-2.jpg" ?> alt="blog">
-              </a>
-              <span class="blog-date"><i class="fa-clock fas"></i>January 25, 2024</span>
-            </div>
-            <div class="blog-content">
-              <div class="blog-metas">
-                <ul>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-user fas"></i> By Admin
-                    </a>
-                  </li>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-comments fas"></i> (03) Comments
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="blog-title h5"><a href="blog-details.html">Advantage Enhancing Global Business
-                  Efficiency</a></h3>
-              <a class="blog-link" href="blog-details.html">Read More<i class="fa-arrow-right far"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="blog-style2 vs-blog">
-            <div class="blog-img">
-              <a href="blog-details.html">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-3.jpg" ?> alt="blog">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-3.jpg" ?> alt="blog">
-              </a>
-              <span class="blog-date"><i class="fa-clock fas"></i>January 25, 2024</span>
-            </div>
-            <div class="blog-content">
-              <div class="blog-metas">
-                <ul>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-user fas"></i> By Admin
-                    </a>
-                  </li>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-comments fas"></i> (03) Comments
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="blog-title h5"><a href="blog-details.html">Leveraging Technology for Global Business Ease</a>
-              </h3>
-              <a class="blog-link" href="blog-details.html">Read More<i class="fa-arrow-right far"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="blog-style2 vs-blog">
-            <div class="blog-img">
-              <a href="blog-details.html">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-4.jpg" ?> alt="blog">
-                <img class="blog-img__item" src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/blog/blog-8-4.jpg" ?> alt="blog">
-              </a>
-              <span class="blog-date"><i class="fa-clock fas"></i>January 25, 2024</span>
-            </div>
-            <div class="blog-content">
-              <div class="blog-metas">
-                <ul>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-user fas"></i> By Admin
-                    </a>
-                  </li>
-                  <li>
-                    <a class="blog-meta" href="blog-details.html">
-                      <i class="fa-comments fas"></i> (03) Comments
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="blog-title h5"><a href="blog-details.html">Leveraging Technology for Global Business Ease</a>
-              </h3>
-              <a class="blog-link" href="blog-details.html">Read More<i class="fa-arrow-right far"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Blog Area End -->
-  <!-- Footer Area -->
-  <footer class="shape-mockup-wrap footer-layout2">
-    <div class="d-xl-block z-index-negative d-none shape-mockup" data-top="0%" data-left="0%">
-      <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/footer-2-1.png" ?> alt="footer shape">
-    </div>
-    <div class="d-xl-block z-index-negative d-none shape-mockup" data-bottom="0%" data-right="0%">
-      <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/footer-2-2.png" ?> alt="footer shape">
-    </div>
-    <div class="widget-area">
-      <div class="container">
-        <div class="justify-content-between row">
-          <div class="col-lg-4 col-md-6 col-xl-auto">
-            <div class="footer-widget widget">
-              <h3 class="widget_title">About Company<img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/d-1-1.svg" ?>></h3>
-              <div class="footer-logo">
-                <a href="index.html"><img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/logo-white.svg" ?> alt="Eventino" class="logo"></a>
-              </div>
-              <div class="vs-widget-about">
-                <p class="footer-text">Vestibulum ac diam sit amet quam vehicula on the elementum sed amet dui molestie
-                  Curabitur arcu erat, accumsan id imperdiet</p>
-                <div class="footer-social">
-                  <a href="#"><i class="fa-facebook-f fab"></i></a>
-                  <a href="#"><i class="fa-twitter fab"></i></a>
-                  <a href="#"><i class="fa-instagram fab"></i></a>
-                  <a href="#"><i class="fa-youtube fab"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-xl-auto">
-            <div class="footer-widget widget widget_nav_menu">
-              <h3 class="widget_title">Quick Link<img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/d-1-1.svg" ?>></h3>
-              <div class="menu-all-pages-container">
-                <ul class="menu">
-                  <li><a href="about.html">About Us <span></span></a></li>
-                  <li><a href="about.html">Our Mission <span></span></a></li>
-                  <li><a href="service.html">Our Services <span></span></a></li>
-                  <li><a href="service.html">Our Project <span></span></a></li>
-                  <li><a href="team.html">Our Team <span></span></a></li>
-                  <li><a href="blog.html">Blog Post <span></span></a></li>
-                  <li><a href="contact.html">Contact Us <span></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-xl-auto">
-            <div class="footer-widget widget widget_nav_menu">
-              <h3 class="widget_title">Explore<img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/d-1-1.svg" ?>></h3>
-              <div class="menu-all-pages-container">
-                <ul class="menu">
-                  <li><a href="about.html">What We Offer <span></span></a></li>
-                  <li><a href="about.html">Our Story <span></span></a></li>
-                  <li><a href="blog.html">Latest Post <span></span></a></li>
-                  <li><a href="contact.html">Help Center <span></span></a></li>
-                  <li><a href="about.html">Terms & Condition <span></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <div class="footer-widget widget">
-              <h3 class="widget_title">Contact Us<img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/shapes/d-1-1.svg" ?>></h3>
-              <div class="footer-info style2">
-                <div class="footer-info_icon">
-                  <i class="fa-phone fas"></i>
-                </div>
-                <div class="media-body">
-                  <span class="footer-info_label">Phone No:</span>
-                  <div class="footer-info_link">
-                    <a href="tel:+1 0109 -1812-347">+1 0109-1812-347</a>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-info style2">
-                <div class="footer-info_icon">
-                  <i class="fa-envelope fas"></i>
-                </div>
-                <div class="media-body">
-                  <span class="footer-info_label">Email Address:</span>
-                  <div class="footer-info_link">
-                    <a href="mailto:Info@eventino.com">Info@eventino.com</a>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-info style2">
-                <div class="footer-info_icon">
-                  <i class="fa-location fas"></i>
-                </div>
-                <div class="media-body">
-                  <div class="footer-info_link">
-                    12/7 new town, 245x Town 1214
-                    Street, United State
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom2">
-      <div class="newsletter-form2">
-        <div class="overlay"></div>
-        <div class="container">
-          <form action="mail.php">
-            <div class="justify-content-between align-items-center g-4 row">
-              <div class="col-lg-auto col-xl-4">
-                <h2 class="mb-0 text-white h4 sec-title">Subscribe Our Newsletter</h2>
-                <p class="text-white sec-text">Subscribe email and get recent news and updates</p>
-              </div>
-              <div class="col-lg-auto">
-                <div class="form-group mb-0">
-                  <input type="email" class="form-control" placeholder="Enter Your Email">
-                  <button class="style4 vs-btn">Subscribe Now</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="copyright-wrap">
-        <div class="justify-content-center justify-content-lg-between row">
-          <div class="col-auto">
-            <p class="copyright-text">Copyright <i class="fa-copyright fal"></i> 2024 <a href="index.html">Eventino</a>.
-              All
-              rights reserved by <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a>.</p>
-          </div>
-          <div class="col-auto">
-            <nav class="footer-menu">
-              <ul>
-                <li class="menu-item">
-                  <a href="about.html">Terms &amp; Condition</a>
-                </li>
-                <li class="menu-item">
-                  <a href="about.html">Privacy</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer Area End -->
+
   <!--********************************
       Code End  Here 
   ******************************** -->
   <!--==============================
         All Js File
     ============================== -->
-  <!-- Jquery -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/vendor/jquery-3.6.0.min.js" ?>></script>
-  <!-- Slick Slider -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/slick.min.js" ?>></script>
-  <!-- Bootstrap -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/bootstrap.min.js" ?>></script>
-  <!-- WOW.js Animation -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/wow.min.js" ?>></script>
-  <!-- Magnific Popup -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/jquery.magnific-popup.min.js" ?>></script>
-  <!-- Isotope Filter -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/imagesloaded.pkgd.min.js" ?>></script>
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/isotope.pkgd.min.js" ?>></script>
-  <!-- Custom Phone Number Input -->
-  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/js/intlTelInput.min.js"></script>
-  <!-- Main Js File -->
-  <script src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/js/main.js" ?>></script>
-</body>
-
-</html>
+<?php include __DIR__ . "/parties/_footer.php" ?>
