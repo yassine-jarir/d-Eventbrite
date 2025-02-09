@@ -1,8 +1,10 @@
 <?php
-
 namespace App\Models;
 
-use App\Core\Database;
+// require_once "../app/Core/Database.php";
+
+
+// use App\Core\Database;
 use PDO;
 
 abstract class Model {

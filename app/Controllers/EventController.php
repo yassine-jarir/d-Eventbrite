@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 class EventController
 {
-    public function index(){
-        require __DIR__ . "/../View/HomePage.php";
-        echo "controller";
+    public function index($request = []) {
+        require __DIR__ . "/../Views/homePage.php";
     }
+ 
 }
