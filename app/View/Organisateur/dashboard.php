@@ -1,6 +1,6 @@
 <?php include __DIR__ . "/../parties/_headerOrganisateur.php" ?>
 
-<body class="bg-theme bg-theme2">
+<body class="bg-theme bg-theme16">
 	<!--wrapper-->
 	<div class="wrapper">
 		<!--sidebar wrapper -->
@@ -98,8 +98,8 @@
 										<td>
 											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
 														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
+												<a href="javascript:;" class="ms-4">
+													<i class='bx-down-arrow-alt bx'></i></a>
 											</div>
 										</td>
 									</tr>

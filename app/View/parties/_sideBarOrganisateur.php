@@ -50,14 +50,14 @@
 				<li class="menu-label">UI Elements</li>
 				<li>
 					<a href="#">
-						<div class="parent-icon"><i class='bx bx-cookie'></i>
+						<div class="parent-icon"><i class='bx bx-user'></i>
 						</div>
 						<div class="menu-title">Erganisateures</div>
 					</a>
 				</li>
 				<li>
-					<a>
-						<div class="parent-icon"><i class='bx bx-cart'></i><i class="text-white" data-feather="alert-circle"></i>
+					<a href="<?php echo __DIR__. "/../Organisateur/addevent.php" ?>">
+						<div class="parent-icon"><i class='bx bxs-calendar-event'></i>
 						</div>
 						<div class="menu-title">Eevenementes</div>
 					</a>
