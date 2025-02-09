@@ -7,7 +7,7 @@ use App\Controllers\AuthController;
 $router = new Routes();
 
 $router->get('/', [EventController::class, 'index']);
-$router->get('/login', [EventController::class, 'login']);
+// $router->get('/login', [EventController::class, 'login']);
 $router->get('/organisateur', [EventController::class, 'organisateur']);
 
 $router->get('/login', [AuthController::class, 'showLoginPage']);
