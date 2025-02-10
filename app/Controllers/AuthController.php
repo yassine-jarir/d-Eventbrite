@@ -12,7 +12,6 @@ class AuthController {
     private $userModel;
 
     public function __construct() {
-     
         $this->userModel = new User();
     }
 
@@ -31,7 +30,7 @@ class AuthController {
     
                  setcookie("jwt", $jwt, time() + 3600, "/", "", false, true);  
                  if ($role === 'admin') {
-                    header("Location: /admin/adminDashboard");
+                    header("Location: /admin");
                     exit;
                 } elseif($role === 'organisateur'){
                     header("Location: /organisateur");
@@ -78,7 +77,7 @@ class AuthController {
  
     public function dashboard() {
         if (!AuthService::isAuthenticated()){
-            header("Location: /auth/login");
+            header("Location: /login");
             exit;
         } 
         if(AuthService::hasRole('organisateur')) {
@@ -96,7 +95,7 @@ class AuthController {
 
     public function logout() {
         AuthService::logout();
-        include __DIR__ . '/../Views/auth/login.php';
+        header("Location: /login");
         exit;
     }
  
