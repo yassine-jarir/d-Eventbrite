@@ -1,247 +1,45 @@
+<?php
+use App\Core\AuthService;
+$userRole = AuthService::isAuthenticated();
+
+if (!$userRole === 'organisateur') {
+    header("Location: /login");
+}
+
+?>  
 <?php include __DIR__ . "/../parties/_headerOrganisateur.php" ?>
 
 <body class="bg-theme bg-theme16">
-	<!--wrapper-->
-	<div class="wrapper">
-		<!--sidebar wrapper -->
-		<?php include __DIR__ . "/../parties/_sideBarOrganisateur.php" ?>
-		<!--end sidebar wrapper -->
-		<!--start header -->
-		<?php include __DIR__ . "/../parties/_navbarOrganisateur.php" ?>
-		<!--end header -->
+ 	<div class="wrapper">
+ 		<?php include __DIR__ . "/../parties/_sideBarOrganisateur.php" ?>
+ 		<?php include __DIR__ . "/../parties/_navbarOrganisateur.php" ?>
+         <script>
+        $(document).ready(function() {
+            $(".nav-link").click(function(e) {
+                e.preventDefault();
+                var page = $(this).data("page");
+
+                $.ajax({
+                    url: "/ajax/load_page",
+                    type: "GET",
+                    data: { page: page },
+                    success: function(response) {
+                        $("#content").html(response);
+                    },
+                    error: function() {
+                        $("#content").html("<h3>Error loading page</h3>");
+                    }
+                });
+            });
+        });
+
+    </script>
 		<!--start page wrapper -->
 		<div class="page-wrapper">
 			<div class="page-content">
 				<!--end row-->
-				<div class="card radius-10">
-					<div class="card-body">
-						<div class="d-flex align-items-center">
-							<div>
-								<h5 class="mb-0">Orders Summary</h5>
-							</div>
-							<div class="ms-auto dropdown">
-								<a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown">
-									<i class='bx-dots-horizontal-rounded font-22 text-option bx'></i>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="javascript:;">Action</a>
-									</li>
-									<li><a class="dropdown-item" href="javascript:;">Another action</a>
-									</li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="javascript:;">Something else here</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<hr />
-						<div class="table-responsive">
-							<table class="table mb-0 align-middle">
-								<thead class="table-light">
-									<tr>
-										<th>Org id</th>
-										<th>Organisateur</th>
-										<th>name</th>
-										<th>Status</th>
-										<th>Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>#897656</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/chair.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">Light Blue Chair</h6>
-												</div>
-											</div>
-										</td>
-										<td>Brooklyn Zeo</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Pending</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>#987549</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/shoes.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">Green Sport Shoes</h6>
-												</div>
-											</div>
-										</td>
-										<td>Martin Hughes</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Dispatched</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4">
-													<i class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>#685749</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/headphones.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">Red Headphone 07</h6>
-												</div>
-											</div>
-										</td>
-										<td>Shoan Stephen</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Completed</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>#887459</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/idea.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">Mini Laptop Device</h6>
-												</div>
-											</div>
-										</td>
-										<td>Alister Campel</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Completed</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>#335428</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/user-interface.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">Purple Mobile Phone</h6>
-												</div>
-											</div>
-										</td>
-										<td>Keate Medona</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Pending</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>#224578</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/watch.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">Smart Hand Watch</h6>
-												</div>
-											</div>
-										</td>
-										<td>Winslet Maya</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Dispatched</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>#447896</td>
-										<td>
-											<div class="d-flex align-items-center">
-												<div class="recent-product-img">
-													<img src="assets/images/icons/tshirt.png" alt="">
-												</div>
-												<div class="ms-2">
-													<h6 class="mb-1 font-14">T-Shirt Blue</h6>
-												</div>
-											</div>
-										</td>
-										<td>Emy Jackson</td>
-										<td>
-											<div class="d-flex align-items-center text-white"> <i
-													class='me-1 font-18 align-middle bx-rotate-90 bx bx-burst bx-radio-circle-marked'></i>
-												<span>Pending</span>
-											</div>
-										</td>
-										<td>
-											<div class="d-flex order-actions"> <a href="javascript:;" class=""><i
-														class="bx bx-cog"></i></a>
-												<a href="javascript:;" class="ms-4"><i
-														class='bx-down-arrow-alt bx'></i></a>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+				<div class="card radius-10" id="content">
+				 
 				</div>
 			</div>
 		</div>
@@ -249,61 +47,24 @@
 		<!--start overlay-->
 		<div class="overlay toggle-icon"></div>
 		<!--end overlay-->
-		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i
+		<!--Start Back To Top Button--> 
+        <a href="javaScript:;" class="back-to-top"><i
 				class='bxs-up-arrow-alt bx'></i></a>
-		<!--End Back To Top Button-->
-		<footer class="page-footer">
-			<p class="mb-0">Copyright © 2021. All right reserved.</p>
-		</footer>
+  
 	</div>
 	<!--end wrapper-->
-	<!--start switcher-->
-	<div class="switcher-wrapper">
-		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
-		</div>
-		<div class="switcher-body">
-			<div class="d-flex align-items-center">
-				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-				<button type="button" class="ms-auto btn-close close-switcher" aria-label="Close"></button>
-			</div>
-			<hr />
-			<p class="mb-0">Gaussian Texture</p>
-			<hr>
-			<ul class="switcher">
-				<li id="theme1"></li>
-				<li id="theme2"></li>
-				<li id="theme3"></li>
-				<li id="theme4"></li>
-				<li id="theme5"></li>
-				<li id="theme6"></li>
-			</ul>
-			<hr>
-			<p class="mb-0">Gradient Background</p>
-			<hr>
-			<ul class="switcher">
-				<li id="theme7"></li>
-				<li id="theme8"></li>
-				<li id="theme9"></li>
-				<li id="theme10"></li>
-				<li id="theme11"></li>
-				<li id="theme12"></li>
-				<li id="theme13"></li>
-				<li id="theme14"></li>
-				<li id="theme15"></li>
-			</ul>
-		</div>
-	</div>
+ 
 	<!--end switcher-->
 	<!-- Bootstrap JS -->
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/js/bootstrap.bundle.min.js" ?>></script>
+	<script src="/assetsOrg/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/js/jquery.min.js" ?>></script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/plugins/simplebar/js/simplebar.min.js" ?>></script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/plugins/metismenu/js/metisMenu.min.js" ?>></script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/plugins/perfect-scrollbar/js/perfect-scrollbar.js" ?>></script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/plugins/apexcharts-bundle/js/apexcharts.min.js" ?>></script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/plugins/datatable/js/jquery.dataTables.min.js" ?>></script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/plugins/datatable/js/dataTables.bootstrap5.min.js" ?>></script>
+	<script src="/assetsOrg/js/jquery.min.js"></script>
+	<script src="/assetsOrg/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="/assetsOrg/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="/assetsOrg/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="/assetsOrg/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+	<script src="/assetsOrg/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="/assetsOrg/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('#Transaction-History').DataTable({
@@ -311,9 +72,9 @@
 			});
 		});
 	</script>
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/js/index.js" ?>></script>
+	<script src="/assetsOrg/js/index.js"></script>
 	<!--app JS-->
-	<script src=<?= $_ENV['PATH_LINK'] . "assetsOrg/js/app.js" ?>></script>
+	<script src="/assetsOrg/js/app.js"></script>
 	<script>
 		new PerfectScrollbar('.product-list');
 		new PerfectScrollbar('.customers-list');
@@ -321,3 +82,5 @@
 </body>
 
 </html>
+
+ 

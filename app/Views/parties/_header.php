@@ -11,7 +11,7 @@
 <!-- Mobile Specific Metas -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Favicons - Place favicon.ico in the root directory -->
-<base href="<?= "http://localhost/Eventbrite/public/" ?>">
+<base href="/public">
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
@@ -39,18 +39,18 @@
 <!-- Bootstrap -->
 <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
 <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" >
 <!-- Fontawesome Icon -->
-<link rel="stylesheet" href="assets/css/fontawesome.min.css" >
+<link rel="stylesheet" href="/assets/css/fontawesome.min.css" >
 
 <!-- Magnific Popup -->
-<link rel="stylesheet" href="assets/css/magnific-popup.min.css" >
+<link rel="stylesheet" href="/assets/css/magnific-popup.min.css" >
 <!-- Slick Slider -->
-<link rel="stylesheet" href="assets/css/slick.min.css" >
+<link rel="stylesheet" href="/assets/css/slick.min.css" >
 <!-- Custom Phone Number Input -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/css/intlTelInput.css">
 <!-- Theme Custom CSS -->
 <link rel="stylesheet"
-  href="assets/css/style.css" >
+  href="/assets/css/style.css" >
 
 <body>

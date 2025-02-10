@@ -1,5 +1,5 @@
 <header>
-    <base href="<?= $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/public/" ?>">
+    <base href="/public">
 </header>
 <!-- Footer Area -->
 <footer class="shape-mockup-wrap footer-layout2">
@@ -152,22 +152,22 @@
 <!-- Footer Area End -->
 
 <!-- Jquery -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/vendor/jquery-3.6.0.min.js" ?>></script>
+<script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
 <!-- Slick Slider -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/slick.min.js" ?>></script>
+<script src="assets/js/slick.min.js"></script>
 <!-- Bootstrap -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/bootstrap.min.js" ?>></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <!-- WOW.js Animation -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/wow.min.js" ?>></script>
+<script src="/assets/js/wow.min.js" ></script>
 <!-- Magnific Popup -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/jquery.magnific-popup.min.js" ?>></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
 <!-- Isotope Filter -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/imagesloaded.pkgd.min.js" ?>></script>
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/isotope.pkgd.min.js" ?>></script>
+<script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
 <!-- Custom Phone Number Input -->
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/js/intlTelInput.min.js"></script>
 <!-- Main Js File -->
-<script src=<?= $_ENV['PATH_LINK'] . "assets/js/main.js" ?>></script>
+<script src="/assets/js/main.js"></script>
 </body>
 
 </html>

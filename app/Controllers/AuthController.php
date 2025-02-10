@@ -30,10 +30,10 @@ class AuthController {
     
                  setcookie("jwt", $jwt, time() + 3600, "/", "", false, true);  
                  if ($role === 'admin') {
-                    header("Location: /admin/adminDashboard");
+                    header("Location: /admin");
                     exit;
                 } elseif($role === 'organisateur'){
-                    header("Location: /organisateur/organisateurDashboard");
+                    header("Location: /organisateur");
                     exit;
                 }elseif ($role === 'participant') {
                     header("Location: /participant");	
@@ -76,11 +76,11 @@ class AuthController {
  
     public function dashboard() {
         if (!AuthService::isAuthenticated()){
-            header("Location: /auth/login");
+            header("Location: /login");
             exit;
         } 
         if(AuthService::hasRole('organisateur')) {
-            include __DIR__ . '/../Views/organisateur/OrgDashboard.php';
+            include __DIR__ . '/../Views/Organisateur/OrgDashboard.php';
         }
         if(AuthService::hasRole('admin')) {
             include __DIR__ . '/../Views/admin/adminDashboard.php';
@@ -92,7 +92,7 @@ class AuthController {
 
     public function logout() {
         AuthService::logout();
-        include __DIR__ . '/../Views/auth/login.php';
+        header("Location: /login");
         exit;
     }
  

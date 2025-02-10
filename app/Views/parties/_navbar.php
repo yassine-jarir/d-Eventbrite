@@ -31,7 +31,7 @@
           <div class="justify-content-between align-items-center gx-sm-0 gx-50 row">
             <div class="col">
               <div class="header-logo">
-                <a href="index.html"><img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/logo.svg" ?> alt="Eventino" class="logo" width="135"
+                <a href="index.html"><img src="/assets/img/logo.svg" alt="Eventino" class="logo" width="135"
                     height="60px"></a>
               </div>
             </div>

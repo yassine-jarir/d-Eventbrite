@@ -11,7 +11,7 @@
   <div class="vs-menu-wrapper">
     <div class="text-center vs-menu-area">
       <div class="mobile-logo">
-        <a href="index.html"><img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/logo-white2.svg" ?> alt="Carmax" class="logo"></a>
+        <a href="index.html"><img src="/assets/img/logo-white2.svg" alt="Carmax" class="logo"></a>
         <button class="vs-menu-toggle"><i class="fa-times fal"></i></button>
       </div>
       <div class="vs-mobile-menu">
