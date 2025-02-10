@@ -33,7 +33,7 @@ class AuthController {
                     header("Location: /admin/adminDashboard");
                     exit;
                 } elseif($role === 'organisateur'){
-                    header("Location: /organisateur/organisateurDashboard");
+                    header("Location: /organisateur");
                     exit;
                 }elseif ($role === 'participant') {
                     header("Location: /participant");	

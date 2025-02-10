@@ -16,8 +16,9 @@ $router->post('/login', [AuthController::class, 'login']);
 $router->post('/signup', [AuthController::class, 'signup']);
 $router->get('/signup', [AuthController::class, 'showSignupPage']);
 
+$router->get('/logout', [AuthController::class, 'logout']);
+
 $router->get('/admin/adminDashboard', [AuthController::class, 'dashboard']);
-$router->get('/organisateur/organisateurDashboard', [AuthController::class, 'dashboard']);
 $router->get('/participant', [AuthController::class, 'dashboard']);
 
  return $router;

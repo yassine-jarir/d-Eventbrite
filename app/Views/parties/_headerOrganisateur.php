@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
-	<base href="<?= "http://localhost/Eventbrite/public/" ?>">
+	<base href="<?= "/public" ?>">
 
 
 	<link rel="icon" href="assetsOrg/images/favicon-32x32.png" type="image/png" />

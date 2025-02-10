@@ -1,6 +1,5 @@
 <?php
 namespace App\Core;
-use PDO;
 use Dotenv\Dotenv;
 use App\Core\Config;
 
@@ -16,11 +15,8 @@ class Database
             $password = $_ENV['DB_PASSWORD'];
             $dbName = $_ENV['DB_NAME'];
 
-             $dsn = "pgsql:host=$serverHost;dbname=$dbName";
-            self::$pdo = new PDO($dsn, $userName, $password, [
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-            ]);
+            $dsn = "pgsql:host=$serverHost;dbname=$dbName";
+            self::$pdo = new \PDO($dsn, $userName, $password);
         }
         return self::$pdo;
     }
