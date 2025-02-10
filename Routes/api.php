@@ -21,4 +21,6 @@ $router->get('/logout', [AuthController::class, 'logout']);
 $router->get('/admin/adminDashboard', [AuthController::class, 'dashboard']);
 $router->get('/participant', [AuthController::class, 'dashboard']);
 
+$router->get('/events', [EventController::class, 'index']);
+
  return $router;

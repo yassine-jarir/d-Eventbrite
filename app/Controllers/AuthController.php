@@ -3,6 +3,7 @@ namespace App\Controllers;
 
 use App\Core\AuthService;
 use App\Models\User;
+use App\Models\Event;
  
 ob_start();
 class AuthController {
@@ -81,7 +82,9 @@ class AuthController {
             exit;
         } 
         if(AuthService::hasRole('organisateur')) {
-            include __DIR__ . '/../Views/organisateur/OrgDashboard.php';
+            $event = new Event();
+            $events = $event->getAll();
+            include __DIR__ . '/../Views/Organisateur/OrgDashboard.php';
         }
         if(AuthService::hasRole('admin')) {
             include __DIR__ . '/../Views/admin/adminDashboard.php';
