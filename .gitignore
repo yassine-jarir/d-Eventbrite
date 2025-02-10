@@ -1,1 +1,14 @@
-vendor/
+ .env
+
+ vendor/
+composer.lock
+
+ cache/
+storage/
+logs/
+
+ .DS_Store
+Thumbs.db
+
+ .idea/
+.vscode/
