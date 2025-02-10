@@ -568,9 +568,9 @@
 									</div>
 									<a href="javascript:;">
 										<div class="text-center msg-footer">
-											<div class="d-flex justify-content-between align-items-center mb-3">
+											<div class="d-flex align-items-center justify-content-between mb-3">
 												<h5 class="mb-0">Total</h5>
-												<h5 class="mb-0 ms-auto">$489.00</h5>
+												<h5 class="ms-auto mb-0">$489.00</h5>
 											</div>
 											<button class="w-100 btn btn-light">Checkout</button>
 										</div>
@@ -581,7 +581,7 @@
 					</div>
 					<div class="px-3 dropdown user-box">
 						<a class="d-flex align-items-center gap-3 dropdown-toggle dropdown-toggle-nocaret nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+							<img src="assetsOrg/images/avatars/user.jpeg" class="user-img" alt="user avatar">
 							<div class="user-info">
 								<p class="mb-0 user-name">Boukadia</p>
 								<p class="mb-0 designattion">organisateur</p>
@@ -592,7 +592,7 @@
 							</li>
 							<li><a class="d-flex align-items-center dropdown-item" href="javascript:;"><i class="bx bx-cog fs-5"></i><span>Settings</span></a>
 							</li>
-							<li><a class="d-flex align-items-center dropdown-item" href="javascript:;"><i class="bx bx-home-circle fs-5"></i><span>Dashboard</span></a>
+							<li><a class="d-flex align-items-center dropdown-item" href="javascript:;"><i class="bx-home-circle bx fs-5"></i><span>Dashboard</span></a>
 							</li>
 							<li><a class="d-flex align-items-center dropdown-item" href="javascript:;"><i class="bx bx-dollar-circle fs-5"></i><span>Earnings</span></a>
 							</li>

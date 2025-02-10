@@ -80,7 +80,7 @@ class AuthController {
             exit;
         } 
         if(AuthService::hasRole('organisateur')) {
-            include __DIR__ . '/../Views/organisateur/dashboard.php';
+            include __DIR__ . '/../Views/organisateur/OrgDashboard.php';
         }
         if(AuthService::hasRole('admin')) {
             include __DIR__ . '/../Views/admin/adminDashboard.php';

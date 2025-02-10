@@ -11,7 +11,7 @@ class EventController
     }
 
     public function organisateur(){
-        require __DIR__ . "/../Views/Organisateur/dashboard.php";
+        require __DIR__ . "/../Views/Organisateur/OrgDashboard.php";
         
     }
     public function index($request = []) {
