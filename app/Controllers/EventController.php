@@ -6,23 +6,37 @@ use App\Models\Event;
 class EventController
 {
  
-    private $eventModel;
+    private $model;
 
     public function __construct() {
-        $this->eventModel = new Event();
+        $this->model = new Event();
     }
     public function index() {
-        $events = $this->eventModel->getAll();
+        $events = $this->model->getAll();
         require __DIR__ . "/../Views/homePage.php";
     }
 
-    public function login(){
-        require __DIR__ . "/../View/login.php";
+    public function organisateur(){
+        $events = $this->model->getAll();
+        require __DIR__ . "/../Views/Organisateur/OrgDashboard.php";
     }
 
-    public function organisateur(){
-        require __DIR__ . "/../Views/Organisateur/OrgDashboard.php";
-        
+    public function create($request){
+
+            $request = [
+                'title' => $request['title'],
+                'description' => $request['description'],
+                'content' => $request['location'],
+                'category_id' => $request['date'],
+                'price' => $request['price'],
+                'status' => $request['status'],
+                'image' => $request['image'],
+            ];
+
+            if ($this->model->create($request)) {
+                $this->response(['message' => 'Ressource créée avec succès.'], 201);
+                return;
+            }
     }
  
 }

@@ -22,5 +22,6 @@ $router->get('/admin/adminDashboard', [AuthController::class, 'dashboard']);
 $router->get('/participant', [AuthController::class, 'dashboard']);
 
 $router->get('/events', [EventController::class, 'index']);
+$router->get('/addEvent', [EventController::class, 'create']);
 
  return $router;

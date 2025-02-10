@@ -3,18 +3,23 @@
 namespace App\Models;
 use App\Core\Database;
 
-class Event
+class Event extends Model
 {
     protected $db ;
+    protected $table = "events";
     
     public function __construct(){
         $this->db = Database::connection();
     }
 
     public function getAll(){
-        $sql = "SELECT * fROM events";
-        $stmt = $this->db->prepare($sql);
+        $query = "SELECT * FROM events";
+        $stmt = $this->db->prepare($query);
         $stmt->execute();
-        return  $stmt->fetchAll();
+        return  $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
+    public function create($request){
+        parent::create($request);
     }
 }   
