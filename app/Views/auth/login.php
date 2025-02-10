@@ -9,7 +9,7 @@
 <!--==============================
   Preloader
   ==============================-->
-  <?php include __DIR__. "/../parties/_loader.php" ?>
+<?php include __DIR__ . "/../parties/_loader.php" ?>
 
 <!--==============================
     Mobile Menu
@@ -199,7 +199,7 @@
   </div>
 </div>
 
-  <?php include __DIR__ . "/../parties/_navbar.php" ?>
+<?php include __DIR__ . "/../parties/_navbar.php" ?>
 <!--==============================
     Breadcumb
     ============================== -->
@@ -255,48 +255,55 @@
 
                 <label class="auth-label" for="mobile_code">Password</label>
                 <div class="form-group">
-                  <input id="password" type="password" name="password" required class="form-control" placeholder="Enter Your Password">
+                  <input id="password" type="password" name="password" required class="form-control"
+                    placeholder="Enter Your Password">
                 </div>
                 <div class="d-flex">
                   <button type="submit" class="w-100 vs-btn" tabindex="0">
                     Log In
                   </button>
                 </div>
-                <p class="auth-link">Not A Member? <a href="register.html">Register</a></p>
+                <!-- <p class="auth-link">Not A Member? <a href="register.html">Register</a></p> -->
               </form>
             </div>
             <div class="fade tab-pane" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
               <form method="POST" action="/signup" class="auth-form style2">
                 <div class="form-group">
-                  <label class="auth-label" for="mobile_code">First Name</label>
+                  <label class="auth-label" for="mobile_code">Username</label>
                   <div>
-                    <input type="text" placeholder="First Name" class="form-control">
+                    <input id="name" type="text" name="name" required placeholder="First Name" class="form-control">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="auth-label" for="mobile_code">Last Name</label>
+                  <label class="auth-label" for="mobile_code">Email</label>
                   <div>
-                    <input type="text" placeholder="Last Name" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="auth-label" for="mobile_code">User Name</label>
-                  <div>
-                    <input type="text" placeholder="User Name" class="form-control">
+                    <input id="email" type="email" name="email" required placeholder="Last Name" class="form-control">
                   </div>
                 </div>
                 <div class="form-group last">
-                  <label class="auth-label" for="mobile_code">Phone Number</label>
+                  <label class="auth-label" for="mobile_code">Password</label>
                   <div>
-                    <input id="phone2" type="tel" placeholder="+880">
+                    <input id="password" type="password" name="password" required placeholder="Last Name"
+                      class="form-control">
                   </div>
                 </div>
-                <div class="d-flex">
-                  <a href="about.html" class="w-100 vs-btn" tabindex="0">
-                    Register
-                  </a>
+                <div class="form-group last">
+                  <label class="auth-label" for="mobile_code">Password</label>
+                  <select
+                    class="shadow px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 w-full text-gray-700 leading-tight appearance-none"
+                    id="role" name="role" required>
+                    <option value="">Select a role</option>
+                    <option value="organisateur">organisateur</option>
+                    <option value="participant">participant</option>
+                  </select>
                 </div>
-                <p class="auth-link">Already Registered? <a href="login.html">Login</a></p>
+
+                <div class="d-flex">
+                  <button type="submit" class="w-100 vs-btn" tabindex="0">
+                    Register
+                  </button>
+                </div>
+                <!-- <p class="auth-link">Already Registered? <a href="/login">Login</a></p> -->
               </form>
             </div>
           </div>

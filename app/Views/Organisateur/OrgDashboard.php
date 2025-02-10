@@ -1,3 +1,14 @@
+
+<?php
+use App\Core\AuthService;
+
+if (!AuthService::isAuthenticated()) {
+	header("Location: /login");
+}if (!AuthService::hasRole('organisateur')) {
+	header("Location: /login");
+}
+?>
+
 <?php include __DIR__ . "/../parties/_headerOrganisateur.php" ?>
 
 <body class="bg-theme bg-theme16">

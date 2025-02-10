@@ -13,8 +13,8 @@ $router->get('/organisateur', [EventController::class, 'organisateur']);
 $router->get('/login', [AuthController::class, 'showLoginPage']);
 $router->post('/login', [AuthController::class, 'login']);
 
-$router->post('/signup', [AuthController::class, 'signup']);
 $router->get('/signup', [AuthController::class, 'showSignupPage']);
+$router->post('/signup', [AuthController::class, 'signup']);
 
 $router->get('/logout', [AuthController::class, 'logout']);
 

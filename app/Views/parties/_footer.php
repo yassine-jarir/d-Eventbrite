@@ -1,5 +1,5 @@
 <header>
-    <base href="<?= $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/public/" ?>">
+    <base href="<?= "/public" ?>">
 </header>
 <!-- Footer Area -->
 <footer class="shape-mockup-wrap footer-layout2">

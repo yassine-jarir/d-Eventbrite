@@ -60,6 +60,7 @@ class AuthController {
             
              if ($this->userModel->createUser($name, $password, $email, $role)) {
                 echo json_encode(['message' => 'User registered successfully.']);
+                header("Location: /login");
             } else {
                 echo json_encode(['message' => 'Error occurred during registration.']);
             }
@@ -71,7 +72,7 @@ class AuthController {
     }
 
      public function showSignupPage() {
-        include_once __DIR__ . '/../Views/auth/signup.php';
+        include_once __DIR__ . '/../Views/auth/login.php';
     }
  
     public function dashboard() {

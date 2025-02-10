@@ -601,7 +601,7 @@
 							<li>
 								<div class="mb-0 dropdown-divider"></div>
 							</li>
-							<li><a class="d-flex align-items-center dropdown-item" href="javascript:;"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
+							<li><a class="d-flex align-items-center dropdown-item" href="/logout"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
 							</li>
 						</ul>
 					</div>
