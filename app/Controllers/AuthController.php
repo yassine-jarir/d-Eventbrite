@@ -3,6 +3,7 @@ namespace App\Controllers;
 
 use App\Core\AuthService;
 use App\Models\User;
+use App\Models\Event;
  
 ob_start();
 class AuthController {
@@ -11,7 +12,6 @@ class AuthController {
     private $userModel;
 
     public function __construct() {
-     
         $this->userModel = new User();
     }
 
@@ -60,6 +60,7 @@ class AuthController {
             
              if ($this->userModel->createUser($name, $password, $email, $role)) {
                 echo json_encode(['message' => 'User registered successfully.']);
+                header("Location: /login");
             } else {
                 echo json_encode(['message' => 'Error occurred during registration.']);
             }
@@ -71,7 +72,7 @@ class AuthController {
     }
 
      public function showSignupPage() {
-        include_once __DIR__ . '/../Views/auth/signup.php';
+        include_once __DIR__ . '/../Views/auth/login.php';
     }
  
     public function dashboard() {
@@ -80,6 +81,8 @@ class AuthController {
             exit;
         } 
         if(AuthService::hasRole('organisateur')) {
+            $event = new Event();
+            $events = $event->getAll();
             include __DIR__ . '/../Views/Organisateur/OrgDashboard.php';
         }
         if(AuthService::hasRole('admin')) {

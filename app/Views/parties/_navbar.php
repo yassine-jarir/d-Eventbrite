@@ -2,7 +2,7 @@
     <!-- Header Top -->
     <div class="header-top v2">
       <div class="container">
-        <div class="justify-content-between align-items-center text-center text-lg-start gy-1 row">
+        <div class="align-items-center justify-content-between text-lg-start text-center gy-1 row">
           <div class="d-lg-block col-lg-auto d-none">
             <p class="header-text"><i class="fa-map-marker-alt fas"></i>YouCode school, Youssoufia
             </p>
@@ -28,21 +28,21 @@
     <div class="header-inner style2">
       <div class="container">
         <div class="menu-top">
-          <div class="justify-content-between align-items-center gx-sm-0 gx-50 row">
+          <div class="align-items-center justify-content-between gx-sm-0 gx-50 row">
             <div class="col">
               <div class="header-logo">
                 <a href="index.html"><img src="/assets/img/logo.svg" alt="Eventino" class="logo" width="135"
                     height="60px"></a>
               </div>
             </div>
-            <div class="d-lg-flex col-auto d-none header-info pe-0">
+            <div class="d-lg-flex pe-0 col-auto d-none header-info">
               <div class="header-info_icon"><i class="fa-envelope fas"></i></div>
               <div class="media-body">
                 <span class="header-info_label">Email Us:</span>
                 <div class="header-info_link"><a href="mailto:example@gmail.com">boukadia@gmail.com</a></div>
               </div>
             </div>
-            <div class="d-lg-flex col-auto d-none header-info pe-0">
+            <div class="d-lg-flex pe-0 col-auto d-none header-info">
               <div class="header-info_icon"><i class="fa-phone-alt fas"></i></div>
               <div class="media-body">
                 <span class="header-info_label">Call us 24/7</span>
@@ -152,7 +152,7 @@
                       <form action="#" class="header-search v2">
                         <input type="text" placeholder="Search here...">
                         <button type="submit" aria-label="search-button">
-                          <img src=<?php echo $_SERVER['REQUEST_SCHEME'] . "://localhost/Eventbrite/app/View/assets/img/icons/e-2-1.svg" ?> alt="icon">
+                          <img src=<?= $_ENV['PATH_LINK'] . "assets/img/icons/e-2-1.svg" ?> alt="icon">
                         </button>
                       </form>
                     </div>

@@ -53,7 +53,6 @@ class Routes
         $request = array_merge($queryParams, $bodyParams);
 
         
-        // print_r($this->routes[$method][$path]);
         if (isset($this->routes[$method][$path])) {
             [$class, $method] = $this->routes[$method][$path];
             $controller = new $class();

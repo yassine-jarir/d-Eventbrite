@@ -1,5 +1,14 @@
 <?php
+
 use App\Core\AuthService;
+
+if (!AuthService::isAuthenticated()) {
+	header("Location: /login");
+}
+if (!AuthService::hasRole('organisateur')) {
+	header("Location: /login");
+}
+
 $userRole = AuthService::isAuthenticated();
 
 if (!$userRole === 'organisateur') {
@@ -39,7 +48,6 @@ if (!$userRole === 'organisateur') {
 			<div class="page-content">
 				<!--end row-->
 				<div class="card radius-10" id="content">
-				 
 				</div>
 			</div>
 		</div>
@@ -48,9 +56,8 @@ if (!$userRole === 'organisateur') {
 		<div class="overlay toggle-icon"></div>
 		<!--end overlay-->
 		<!--Start Back To Top Button--> 
-        <a href="javaScript:;" class="back-to-top"><i
-				class='bxs-up-arrow-alt bx'></i></a>
-  
+        <a href="javaScript:;" class="back-to-top">
+			<i class='bxs-up-arrow-alt bx'></i></a>
 	</div>
 	<!--end wrapper-->
  
@@ -79,6 +86,7 @@ if (!$userRole === 'organisateur') {
 		new PerfectScrollbar('.product-list');
 		new PerfectScrollbar('.customers-list');
 	</script>
+	<script src="/assetsOrg/js/organisateur.js"></script>
 </body>
 
 </html>
