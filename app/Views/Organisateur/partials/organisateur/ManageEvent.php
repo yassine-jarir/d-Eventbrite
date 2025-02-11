@@ -3,25 +3,13 @@
     <hr />
     <div class="card">
         <div class="card-body">
-            <div class="d-flex align-items-center">
+            <div class="d-flex justify-between align-items-center">
                 <div>
-                    <h5 class="mb-0">Listes des Evenementes</h5>
+                    <h5 class="my-4 text-xl">La liste des Evenementes</h5>
                 </div>
-                <div class="ms-auto dropdown">
-                    <a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown">
-                        <i class='bx-dots-horizontal-rounded font-22 text-option bx'></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="javascript:;">Action</a>
-                        </li>
-                        <li><a class="dropdown-item" href="javascript:;">Another action</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                        </li>
-                    </ul>
+
+                <div class="d-flex order-actions pb-2 cursor-pointer" id="addBtn">
+                        <i class='text-3xl bx bx-message-square-add'></i>
                 </div>
             </div>
             <hr />
@@ -71,3 +59,67 @@
         </div>
     </div>
 </div>
+
+<div class="left-[50%] position-absolute translate-[-50%] card" id="addPopup">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Date:</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Date time:</label>
+                <input type="datetime-local" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" class="form-control" placeholder="example@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password:</label>
+                <input type="password" class="form-control" value="........">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Input File:</label>
+                <input type="file" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Month:</label>
+                <input type="month" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Search:</label>
+                <input type="search" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Tel:</label>
+                <input type="tel" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Time:</label>
+                <input type="time" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Url:</label>
+                <input type="url" class="form-control" placeholder="https://example.com/users/">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Week:</label>
+                <input type="week" class="form-control">
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    // console.log("tettttttttttttttt");
+    
+    const addBtn = document.getElementById("addBtn");
+    const addPopup = document.getElementById("addPopup");
+    
+    addBtn.addEventListener("click", openPopup());
+    
+    function openPopup() {
+        addPopup.classList.toggle("open");
+        console.log("tesssst");
+    }
+</script>

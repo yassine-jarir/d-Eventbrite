@@ -56,9 +56,8 @@ if (!$userRole === 'organisateur') {
 		<div class="overlay toggle-icon"></div>
 		<!--end overlay-->
 		<!--Start Back To Top Button--> 
-        <a href="javaScript:;" class="back-to-top"><i
-				class='bxs-up-arrow-alt bx'></i></a>
-  
+        <a href="javaScript:;" class="back-to-top">
+			<i class='bxs-up-arrow-alt bx'></i></a>
 	</div>
 	<!--end wrapper-->
  
@@ -87,6 +86,7 @@ if (!$userRole === 'organisateur') {
 		new PerfectScrollbar('.product-list');
 		new PerfectScrollbar('.customers-list');
 	</script>
+	<script src="/assetsOrg/js/organisateur.js"></script>
 </body>
 
 </html>
