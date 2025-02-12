@@ -35,6 +35,10 @@ $router->get('/ajax/load_page', [AjaxController::class, 'loadPage']);
 $router->get('/events', [EventController::class, 'index']);
 $router->get('/addEvent', [EventController::class, 'create']);
 
+// ===============================mustapha ajouter==================
+$router->get('/dernierEvent', [EventController::class, 'dernierEvent']);
+
+
  return $router;
 
  

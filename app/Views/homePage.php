@@ -1,6 +1,5 @@
 <?php
 
-namespace App\Models;
 
 include __DIR__ . "/parties/_header.php" ?>
 
@@ -393,10 +392,8 @@ include __DIR__ . "/parties/_header.php" ?>
       <!-- ========================================================================================================================== -->
       <?php
 
-      use App\Core\Database;
+      // use App\Core\Database;
 
-      $events = new Event();
-      $events = $events->getAll();
       // print_r($test);
 
       foreach ($events as $event) {
@@ -425,8 +422,7 @@ include __DIR__ . "/parties/_header.php" ?>
                 </ul>
               </div>
               <h3 class='event-title h5'><a href='event-details.html'>" . $event['title'] . "</a></h3>
-              <p class='event-text'>Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
-                am adipiscing elit.</p>
+              <p class='event-text'>" . $event['description'] . "</p>
               <div class='event-footer'>
                 <a href='event-details.html' class='event-link'>Tickets & Details</a>
                 <span class='event-price'>Price: <span>" . $event['price'] . "</span></span>
@@ -444,6 +440,7 @@ include __DIR__ . "/parties/_header.php" ?>
       <!-- ========================================================================================================================== -->
       <!-- 
        
+      
 
       <!-- ========================================================================================================================== -->
       <!-- ========================================================================================================================== -->
@@ -455,7 +452,7 @@ include __DIR__ . "/parties/_header.php" ?>
     <div class="justify-content-center row">
       <div class="col-auto">
         <div class="d-inline-flex pt-10">
-          <a href="event.html" class="vs-btn">View All Events</a>
+          <a href="dernierEvent" class="vs-btn">View All Events</a>
         </div>
       </div>
     </div>

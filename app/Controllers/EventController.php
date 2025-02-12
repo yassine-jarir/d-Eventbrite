@@ -16,6 +16,13 @@ class EventController
         require __DIR__ . "/../Views/homePage.php";
     }
 
+    
+// ===============================mustapha ajouter==================
+    public function dernierEvent() {
+        $events = $this->model->getDerniereEvent();
+        require __DIR__ . "/../Views/participant/events.php";
+    }
+
     public function organisateur(){
         $events = $this->model->getAll();
         require __DIR__ . "/../Views/Organisateur/OrgDashboard.php";
