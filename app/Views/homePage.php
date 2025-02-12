@@ -443,182 +443,14 @@ include __DIR__ . "/parties/_header.php" ?>
       <!-- ========================================================================================================================== -->
       <!-- ========================================================================================================================== -->
       <!-- 
-        <div class="filter-item Art col-lg-4 col-md-6 Education Sport">
-          <div class="event-style1">
-            <div class="event-img">
-              <img src=<?= $_ENV['PATH_LINK'] . "assets/img/events/e-1-2.jpg" ?> alt="e 1 1">
-              <div class="event-tags">
-                <a href="event-details.html">Art</a>
-              </div>
-              <div class="event-date">
-                <span>24</span>
-                January
-              </div>
-            </div>
-            <div class="event-content">
-              <div class="event-meta">
-                <ul>
-                  <li>
-                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
-                  </li>
-                  <li>
-                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="event-title h5"><a href="event-details.html">New Year’s Eve Reunion Celebrate with Music and
-                  Friends</a></h3>
-              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
-                am adipiscing elit.</p>
-              <div class="event-footer">
-                <a href="event-details.html" class="event-link">Tickets & Details</a>
-                <span class="event-price">Price: <span>$150</span></span>
-              </div>
-            </div>
-          </div>
-        </div> -->
+       
 
       <!-- ========================================================================================================================== -->
       <!-- ========================================================================================================================== -->
       <!-- ========================================================================================================================== -->
 
 
-      <!-- <div class="filter-item Art col-lg-4 col-md-6 Education More">
-          <div class="event-style1">
-            <div class="event-img">
-              <img src=<?= $_ENV['PATH_LINK'] . "assets/img/events/e-1-3.jpg" ?> alt="e 1 1">
-              <div class="event-tags">
-                <a href="event-details.html">Education</a>
-              </div>
-              <div class="event-date">
-                <span>25</span>
-                March
-              </div>
-            </div>
-            <div class="event-content">
-              <div class="event-meta">
-                <ul>
-                  <li>
-                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
-                  </li>
-                  <li>
-                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="event-title h5"><a href="event-details.html">2024 Reunion Music, Memories, and New Year’s
-                  Celebrations</a></h3>
-              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
-                am adipiscing elit.</p>
-              <div class="event-footer">
-                <a href="event-details.html" class="event-link">Tickets & Details</a>
-                <span class="event-price">Price: <span>$199</span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="filter-item Business col-lg-4 col-md-6 Education Education">
-          <div class="event-style1">
-            <div class="event-img">
-              <img src=<?= $_ENV['PATH_LINK'] . "assets/img/events/e-1-4.jpg" ?> alt="e 1 1">
-              <div class="event-tags">
-                <a href="event-details.html">Education</a>
-              </div>
-              <div class="event-date">
-                <span>15</span>
-                January
-              </div>
-            </div>
-            <div class="event-content">
-              <div class="event-meta">
-                <ul>
-                  <li>
-                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
-                  </li>
-                  <li>
-                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="event-title h5"><a href="event-details.html">Unite and Celebrate Happy New Year Music
-                  Festival</a></h3>
-              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
-                am adipiscing elit.</p>
-              <div class="event-footer">
-                <a href="event-details.html" class="event-link">Tickets & Details</a>
-                <span class="event-price">Price: <span>$299</span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="filter-item Business col-lg-4 col-md-6 More Sport">
-          <div class="event-style1">
-            <div class="event-img">
-              <img src=<?= $_ENV['PATH_LINK'] . "assets/img/events/e-1-5.jpg" ?> alt="e 1 1">
-              <div class="event-tags">
-                <a href="event-details.html">Sport</a>
-              </div>
-              <div class="event-date">
-                <span>12</span>
-                January
-              </div>
-            </div>
-            <div class="event-content">
-              <div class="event-meta">
-                <ul>
-                  <li>
-                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
-                  </li>
-                  <li>
-                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="event-title h5"><a href="event-details.html">Celebrate Together New Year’s Reunion and Music
-                  Bash</a></h3>
-              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
-                am adipiscing elit.</p>
-              <div class="event-footer">
-                <a href="event-details.html" class="event-link">Tickets & Details</a>
-                <span class="event-price">Price: <span>$199</span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="filter-item col-lg-4 col-md-6 Festival Sport">
-          <div class="event-style1">
-            <div class="event-img">
-              <img src=<?= $_ENV['PATH_LINK'] . "assets/img/events/e-1-6.jpg" ?> alt="e 1 1">
-              <div class="event-tags">
-                <a href="event-details.html">Festival</a>
-              </div>
-              <div class="event-date">
-                <span>10</span>
-                January
-              </div>
-            </div>
-            <div class="event-content">
-              <div class="event-meta">
-                <ul>
-                  <li>
-                    <span><i class="fa-clock fas"></i>08:00am - 22:00pm</span>
-                  </li>
-                  <li>
-                    <span><i class="fa-map-marker-alt fas"></i>245x Town 1214 Street, US</span>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="event-title h5"><a href="event-details.html">Dance into the New Year Reunion and Music
-                  Festival</a></h3>
-              <p class="event-text">Lorem ipsulm siteli amet, dogflor consectetur iscing elit. siteli ipsulm
-                am adipiscing elit.</p>
-              <div class="event-footer">
-                <a href="event-details.html" class="event-link">Tickets & Details</a>
-                <span class="event-price">Price: <span>$199</span></span>
-              </div>
-            </div>
-          </div>
-        </div> -->
+     
     </div>
     <div class="justify-content-center row">
       <div class="col-auto">
@@ -633,7 +465,7 @@ include __DIR__ . "/parties/_header.php" ?>
 
 
 <!-- Feature Area -->
-<!-- <section class="feature-layout2">
+<section class="feature-layout2">
     <div class="container">
       <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2"
         data-md-slide-show="2">
@@ -679,7 +511,7 @@ include __DIR__ . "/parties/_header.php" ?>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 <!-- Feature Area End -->
 <!-- Upcoming Events -->
 <section class="events-layout2">
