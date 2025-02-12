@@ -18,5 +18,3 @@ $routes->dispatch($requestMethod, $requestUri);
 
 
 // echo $_ENV['DB_HOST'];
-
-
