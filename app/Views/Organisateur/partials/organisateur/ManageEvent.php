@@ -73,35 +73,35 @@
                 </div>
                 <div class="mb-2 col-md-4">
                     <label class="form-label">Location :</label>
-                    <select id="selectLocation" class="form-select mb-2 col-md-6" aria-label="Default select example">
-                        <option selected>Choisie location</option>
+                    <select id="selectLocation" required class="form-select mb-2 col-md-6" aria-label="Default select example">
+                        <option disabled selected>Choisie location</option>
                     </select>
                 </div>
                 <div class="mb-2 col-md-4">
                     <label class="form-label">Category :</label>
-                    <select id="selectCategories" class="form-select mb-2 col-md-6" aria-label="Default select example">
-                        <option selected>Choisie category</option>
+                    <select id="selectCategories" required class="form-select mb-2 col-md-6" aria-label="Default select example">
+                        <option disabled selected>Choisie category</option>
                     </select>
                 </div>
             </div>
             <div class="row">
                 <div class="mb-2 col-md-6">
                     <label class="form-label">Date:</label>
-                    <input type="date" id="date" class="form-control">
+                    <input type="date" required id="date" class="form-control">
                 </div>
                 <div class="mb-2 col-md-6">
                     <label class="form-label">Price:</label>
-                    <input type="text" id="price" class="form-control">
+                    <input type="text" required id="price" class="form-control">
                 </div>
             </div>
             <div class="row">
                 <div class="mb-2 col-md-6">
                     <label class="form-label">heure de début :</label>
-                    <input type="time" id="start_time" class="form-control">
+                    <input type="time" required id="start_time" class="form-control">
                 </div>
                 <div class="mb-2 col-md-6">
                     <label class="form-label">heure de fin :</label>
-                    <input type="time" id="end_time" class="form-control">
+                    <input type="time" required id="end_time" class="form-control">
                 </div>
             </div>
             <div class="row">
