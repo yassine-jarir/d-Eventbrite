@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Controllers;
+use App\Controllers\Controller;
 use App\Models\Event;
 
-class EventController
+
+class EventController extends Controller
 {
- 
-    private $model;
 
     public function __construct() {
         $this->model = new Event();
@@ -22,21 +22,47 @@ class EventController
     }
 
     public function create($request){
-
-            $request = [
-                'title' => $request['title'],
-                'description' => $request['description'],
-                'content' => $request['location'],
-                'category_id' => $request['date'],
-                'price' => $request['price'],
-                'status' => $request['status'],
-                'image' => $request['image'],
+        
+        $request = [
+                'title' => $request['data']['title'],
+                'location' => $request['data']['location'],
+                'date' => $request['data']['date'],
+                'price' => $request['data']['price'],
+                'event_image' => $request['data']['event_image'],
+                'start_time' => "00:00:00",
+                'end_time' => "00:00:00",
+                'category_id' => 1,
+                'description' => $request['data']['description'],
             ];
-
-            if ($this->model->create($request)) {
-                $this->response(['message' => 'Ressource créée avec succès.'], 201);
-                return;
-            }
+            
+            parent::create($request);
     }
+    
+    public function edite($request) {
+        $id = $request['id'];
+        parent::edite($id);
+    }
+
+    public function updateEvent($request){
+
+       $id = $request['id'];
+        
+        $request = [
+                'title' => $request['data']['title'],
+                'location' => $request['data']['location'],
+                'date' => $request['data']['date'],
+                'price' => $request['data']['price'],
+                'image' => $request['data']['image'],
+                'description' => $request['data']['description'],
+            ];
+            
+            parent::update($id, $request);
+    }
+
+    public function remove($request) {
+        $id = $request['id'];
+        parent::delete($id);
+    }
+
  
 }

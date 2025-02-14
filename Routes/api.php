@@ -4,6 +4,8 @@ use App\Core\Routes;
 use App\Controllers\EventController;
 use App\Controllers\AuthController;
 use App\Controllers\AjaxController;
+use App\Controllers\VilleController;
+use App\Controllers\CategoryController;
 
 $router = new Routes();
 
@@ -32,8 +34,14 @@ $router->get('/admin', [AuthController::class, 'dashboard']);
  
 $router->get('/ajax/load_page', [AjaxController::class, 'loadPage']);
 
-$router->get('/events', [EventController::class, 'index']);
-$router->get('/addEvent', [EventController::class, 'create']);
+$router->get('/events', [EventController::class, 'getAll']);
+$router->post('/addEvent', [EventController::class, 'create']);
+$router->get('/deleteEvent', [EventController::class, 'remove']);
+$router->get('/editeEvent', [EventController::class, 'edite']);
+$router->post('/updateEvent', [EventController::class, 'updateEvent']);
+
+$router->get('/villes', [VilleController::class, 'getAll']);
+$router->get('/categories', [CategoryController::class, 'getAll']);
 
  return $router;
 

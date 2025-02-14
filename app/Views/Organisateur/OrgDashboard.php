@@ -12,37 +12,55 @@ if (!AuthService::hasRole('organisateur')) {
 $userRole = AuthService::isAuthenticated();
 
 if (!$userRole === 'organisateur') {
-    header("Location: /login");
+	header("Location: /login");
 }
 
-?>  
+?>
 <?php include __DIR__ . "/../parties/_headerOrganisateur.php" ?>
 
 <body class="bg-theme bg-theme16">
- 	<div class="wrapper">
- 		<?php include __DIR__ . "/../parties/_sideBarOrganisateur.php" ?>
- 		<?php include __DIR__ . "/../parties/_navbarOrganisateur.php" ?>
-         <script>
-        $(document).ready(function() {
-            $(".nav-link").click(function(e) {
-                e.preventDefault();
-                var page = $(this).data("page");
+	<div class="wrapper">
+		<?php include __DIR__ . "/../parties/_sideBarOrganisateur.php" ?>
+		<?php include __DIR__ . "/../parties/_navbarOrganisateur.php" ?>
+		<script>
+			$(document).ready(function () {
+				$.ajax({
+					url: "/ajax/load_page",
+					type: "GET",
+					data: { page: "ManageEvent" },
+					
+					success: function (response) {
+						$("#content").html(response);
+					},
 
-                $.ajax({
-                    url: "/ajax/load_page",
-                    type: "GET",
-                    data: { page: page },
-                    success: function(response) {
-                        $("#content").html(response);
-                    },
-                    error: function() {
-                        $("#content").html("<h3>Error loading page</h3>");
-                    }
-                });
-            });
-        });
+					error: function () {
+						$("#content").html("<h3>Error loading page</h3>");
+					}
+				});
+			});
 
-    </script>
+			$(document).ready(function () {
+				$(".nav-link").click(function (e) {
+					e.preventDefault();
+					var page = $(this).data("page");
+
+					$.ajax({
+						url: "/ajax/load_page",
+						type: "GET",
+						data: { page: page },
+
+						success: function (response) {
+							$("#content").html(response);
+						},
+
+						error: function () {
+							$("#content").html("<h3>Error loading page</h3>");
+						}
+					});
+				});
+			});
+
+		</script>
 		<!--start page wrapper -->
 		<div class="page-wrapper">
 			<div class="page-content">
@@ -55,12 +73,12 @@ if (!$userRole === 'organisateur') {
 		<!--start overlay-->
 		<div class="overlay toggle-icon"></div>
 		<!--end overlay-->
-		<!--Start Back To Top Button--> 
-        <a href="javaScript:;" class="back-to-top">
+		<!--Start Back To Top Button-->
+		<a href="javaScript:;" class="back-to-top">
 			<i class='bxs-up-arrow-alt bx'></i></a>
 	</div>
 	<!--end wrapper-->
- 
+
 	<!--end switcher-->
 	<!-- Bootstrap JS -->
 	<script src="/assetsOrg/js/bootstrap.bundle.min.js"></script>
@@ -90,5 +108,3 @@ if (!$userRole === 'organisateur') {
 </body>
 
 </html>
-
- 

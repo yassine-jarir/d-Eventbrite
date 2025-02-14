@@ -51,7 +51,7 @@ class AuthController {
             $password = $_POST['password'];
             $name = $_POST['name'];
             $role = $_POST['role'];
-            // echo $role;
+            
              $existingUser = $this->userModel->getUserByUsername($email);
             if ($existingUser) {
                 echo json_encode(['message' => 'Username already taken.']);
