@@ -67,14 +67,20 @@
     <div class="p-[1.5rem] card-body">
         <form id="eventForm">
             <div class="row">
-                <div class="mb-2 col-md-6">
+                <div class="mb-2 col-md-4">
                     <label class="form-label">Titre:</label>
                     <input type="text" id="title" class="form-control">
                 </div>
-                <div class="mb-2 col-md-6">
+                <div class="mb-2 col-md-4">
                     <label class="form-label">Location :</label>
                     <select id="selectLocation" class="form-select mb-2 col-md-6" aria-label="Default select example">
-                        <option selected>Location</option>
+                        <option selected>Choisie location</option>
+                    </select>
+                </div>
+                <div class="mb-2 col-md-4">
+                    <label class="form-label">Category :</label>
+                    <select id="selectCategories" class="form-select mb-2 col-md-6" aria-label="Default select example">
+                        <option selected>Choisie category</option>
                     </select>
                 </div>
             </div>
@@ -89,6 +95,16 @@
                 </div>
             </div>
             <div class="row">
+                <div class="mb-2 col-md-6">
+                    <label class="form-label">heure de début :</label>
+                    <input type="time" id="start_time" class="form-control">
+                </div>
+                <div class="mb-2 col-md-6">
+                    <label class="form-label">heure de fin :</label>
+                    <input type="time" id="end_time" class="form-control">
+                </div>
+            </div>
+            <div class="row">
                 <div class="mb-2 col-md-12">
                     <label class="form-label">Image :</label>
                     <input type="file" id="image" class="form-control">
@@ -100,10 +116,10 @@
                     rows="3"></textarea>
             </div>
             <div class="justify-between row">
-                <div class="mt-4 mb-2 col-3">
+                <div class="mt-4 mb-2 col-3 col-md-5">
                     <button type="button" id="submit" class="px-5 btn btn-light">Ajouter</button>
                 </div>
-                <div class="mt-4 mb-2 col-3">
+                <div class="mt-4 mb-2 col-3 col-md-5">
                     <button type="button" onclick="cancelPopup()" class="px-5 btn btn-light">annuler</button>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Controllers\Controller;
+use App\Core\AuthService;
 use App\Models\Event;
 
 
@@ -22,6 +23,8 @@ class EventController extends Controller
     }
 
     public function create($request){
+
+        $userData = AuthService::isAuthenticated();
         
         $request = [
                 'title' => $request['data']['title'],
@@ -29,9 +32,10 @@ class EventController extends Controller
                 'date' => $request['data']['date'],
                 'price' => $request['data']['price'],
                 'event_image' => $request['data']['event_image'],
-                'start_time' => "00:00:00",
-                'end_time' => "00:00:00",
-                'category_id' => 1,
+                'category_id' => $request['data']['category'],
+                'start_time' => $request['data']['start_time'],
+                'end_time' => $request['data']['end_time'],
+                'organizer_id' => $userData['userid'],
                 'description' => $request['data']['description'],
             ];
             

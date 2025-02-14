@@ -1,27 +1,29 @@
 $(document).on('click', '#toggleBtn', togglePopup)
 let dataEvents
 let eventFind
+const selectLocation = document.getElementById('selectLocation')
+const selectCategory = document.getElementById('selectCategories')
 
 function togglePopup () {
   $('#addPopup').toggleClass('hidden')
-  getDataVilles();
-  getDataCategories();
+  getDataVilles()
+  getDataCategories()
 }
 
 function cancelPopup () {
-    $('#addPopup').toggleClass('hidden')
-    let oldButton = document.getElementById('btn-modifier')
-    if (oldButton) {
-        let newButton = oldButton.cloneNode(true)
-      
-        newButton.id = 'submit'
-        newButton.className += 'px-5 btn btn-light'
-        newButton.textContent = 'Ajouter'
-      
-        oldButton.replaceWith(newButton)
-    }
-    getDataVilles()
+  $('#addPopup').toggleClass('hidden')
+  let oldButton = document.getElementById('btn-modifier')
+  if (oldButton) {
+    let newButton = oldButton.cloneNode(true)
+
+    newButton.id = 'submit'
+    newButton.className += 'px-5 btn btn-light'
+    newButton.textContent = 'Ajouter'
+
+    oldButton.replaceWith(newButton)
   }
+  getDataVilles()
+}
 
 async function getDataVilles () {
   const url = '/villes'
@@ -40,20 +42,20 @@ async function getDataVilles () {
 }
 
 async function getDataCategories () {
-    const url = '/categories'
-    try {
-      const response = await fetch(url)
-      if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`)
-      }
-  
-      const dataCategories = await response.json()
-  
-      populateSelectCategories(dataCategories)
-    } catch (error) {
-      console.error(error.message)
+  const url = '/categories'
+  try {
+    const response = await fetch(url)
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`)
     }
+
+    const dataCategories = await response.json()
+
+    populateSelectCategories(dataCategories)
+  } catch (error) {
+    console.error(error.message)
   }
+}
 
 async function getDataEvents () {
   const url = '/events'
@@ -68,10 +70,8 @@ async function getDataEvents () {
 
     const bodyTableEvents = document.getElementById('bodyTableEvents')
 
-    // Vider le tableau avant de le remplir à nouveau
     bodyTableEvents.innerHTML = ''
 
-    // Appeler la fonction pour peupler le tableau
     populateTable(dataEvents, bodyTableEvents)
   } catch (error) {
     console.error(error.message)
@@ -80,12 +80,12 @@ async function getDataEvents () {
 
 function populateTable (data, element) {
   data.forEach(item => {
-    // Chercher une ligne existante avec le même ID
+    
     let row = document.querySelector(`tr[data-id="${item.id}"]`)
 
     if (!row) {
-      // Si la ligne n'existe pas, on la crée
-      row = document.createElement('tr')
+
+        row = document.createElement('tr')
       row.setAttribute('data-id', item.id)
 
       row.innerHTML = `
@@ -155,27 +155,24 @@ async function handleEdite (id) {
 }
 
 function populateForm (data) {
-  console.log(data)
-
   document.getElementById('title').value = data.title
   document.getElementById('date').value = data.date.split(' ')[0]
   document.getElementById('price').value = data.price
   document.getElementById('description').value = data.description
 
-  const selectLocation = document.getElementById('selectLocation')
-  selectLocation.innerHTML = `<option selected>${data.location}</option>`
+  document.getElementById('start_time').value = data.start_time.split(' ')[0]
+  document.getElementById('end_time').value = data.end_time.split(' ')[0]
 
   let oldButton = document.getElementById('submit')
   if (oldButton) {
-      let newButton = oldButton.cloneNode(true)
-    
-      newButton.id = 'btn-modifier'
-      newButton.className += ' bg-sky-600'
-      newButton.textContent = 'Modifier'
-    
-      oldButton.replaceWith(newButton)
-  }
+    let newButton = oldButton.cloneNode(true)
 
+    newButton.id = 'btn-modifier'
+    newButton.className += ' bg-sky-600'
+    newButton.textContent = 'Modifier'
+
+    oldButton.replaceWith(newButton)
+  }
 
   togglePopup()
 }
@@ -191,31 +188,34 @@ function populateSelect (data) {
 }
 
 function populateSelectCategories (data) {
-    const selectElement = document.getElementById('selectCategories')
-    data.forEach(item => {
-      const option = document.createElement('option')
-      option.value = item.id
-      option.textContent = item.ville
-      selectElement.appendChild(option)
-    })
-  }
+  const selectCategory = document.getElementById('selectCategories')
+  data.forEach(item => {
+    const option = document.createElement('option')
+    option.value = item.id
+    option.textContent = item.name
+    selectCategory.appendChild(option)
+  })
+}
 
 $(document).on('click', '#submit', function (e) {
   e.preventDefault()
   const data = getFormData()
-  sendData(data);
+  sendData(data)
 })
 
 $(document).on('click', '#btn-modifier', function (e) {
-    e.preventDefault()
-    const data = getFormData()
-    updateData(data);
-  })
+  e.preventDefault()
+  const data = getFormData()
+  updateData(data)
+})
 
 function getFormData () {
   const formData = {
     title: document.getElementById('title').value,
     location: document.getElementById('selectLocation').value,
+    category: document.getElementById('selectCategories').value,
+    start_time: document.getElementById('start_time').value,
+    end_time: document.getElementById('end_time').value,
     date: document.getElementById('date').value,
     price: document.getElementById('price').value,
     event_image: document.getElementById('image').value,
@@ -243,18 +243,18 @@ async function sendData (data) {
 }
 
 async function updateData (data) {
-    fetch(`/updateEvent?id=${eventFind.id}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ data })
+  fetch(`/updateEvent?id=${eventFind.id}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ data })
+  })
+    .then(response => response.json())
+    .then(result => {
+      console.log('Success:', result)
+      return getDataEvents()
     })
-      .then(response => response.json())
-      .then(result => {
-        console.log('Success:', result)
-        return getDataEvents()
-      })
-      .catch(error => console.error('Error:', error))
-    togglePopup()
-  }
+    .catch(error => console.error('Error:', error))
+  togglePopup()
+}
