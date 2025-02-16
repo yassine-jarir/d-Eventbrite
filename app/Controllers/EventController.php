@@ -17,10 +17,17 @@ class EventController extends Controller
         require __DIR__ . "/../Views/homePage.php";
     }
 
+    public function dernierEvent()
+    {
+        $events = $this->model->getDerniereEvent();
+        require __DIR__ . "/../Views/participant/events.php";
+    }
+
     public function organisateur(){
         $events = $this->model->getAll();
         require __DIR__ . "/../Views/Organisateur/OrgDashboard.php";
     }
+    
 
     public function create($request){
 

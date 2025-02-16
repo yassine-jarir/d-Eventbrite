@@ -30,7 +30,10 @@ $router->get('/logout', [AuthController::class, 'logout']);
 $router->get('/organisateur', [AuthController::class, 'dashboard']);
 $router->get('/admin', [AuthController::class, 'dashboard']);
 $router->get('/participant', [AuthController::class, 'dashboard']);
+// ===============================================
+$router->get('/dernierEvent', [EventController::class, 'dernierEvent']);
 
+// ====================================================
 
 
 // organisateur routes
